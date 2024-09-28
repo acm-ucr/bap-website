@@ -11,7 +11,8 @@ const opensans = Open_Sans({
 
 export const metadata = {
   title: "BAP Website",
-  description: "An honors accounting, information systems, and finance organization designed to promote professional excellence.",
+  description:
+    "An honors accounting, information systems, and finance organization designed to promote professional excellence.",
 };
 
 type LayoutProps = {
@@ -21,7 +22,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${opensans.className} bg-bap-brown-400 min-h-screen flex flex-col flex-auto justify-between text-white`}>
+      <body
+        className={`${opensans.className} flex min-h-screen flex-auto flex-col justify-between bg-bap-brown-400 text-white`}
+      >
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
