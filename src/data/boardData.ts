@@ -12,13 +12,13 @@ export const BOARDDATA: BOARDTYPE[] = [
     name: "Professor John Doe",
     title: "Department of Business",
     email: "123@gmail.com",
-    img: "/public/boardPlaceholder.png",
+    img: "/public/boardPlaceholder.webp",
   },
   {
     boardPosition: "President",
     name: "Jane Doe",
     title: "4th year - Business Economics",
     email: "123@gmail.com",
-    img: "/public/boardPlaceholder.png",
+    img: "/public/boardPlaceholder.webp",
   },
 ];
