@@ -7,6 +7,8 @@ const Events = () => {
     <div className="flex w-screen flex-col items-center">
       <Title />
       <Upcoming />
+      <Upcoming />
+      <Upcoming />
       <Calendar />
     </div>
   );
