@@ -1,14 +1,14 @@
 import Title from "@/components/Title";
 import Calendar from "@/components/events/Calendar";
-import Upcoming from "@/components/events/Upcoming";
+import EventCard from "@/components/events/EventCard";
 
 const Events = () => {
   return (
     <div className="flex w-screen flex-col items-center">
       <Title />
-      <Upcoming />
-      <Upcoming />
-      <Upcoming />
+      <EventCard />
+      <EventCard />
+      <EventCard />
       <Calendar />
     </div>
   );
