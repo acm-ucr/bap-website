@@ -1,7 +1,7 @@
 type props = {
   title: string;
-}
-const Title = ({title}: props) => {
+};
+const Title = ({ title }: props) => {
   return (
     <div className="flex flex-col">
       <div className="">{title}</div>
