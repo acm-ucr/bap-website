@@ -8,7 +8,6 @@ import logo from "@/public/bap.webp";
 import { navData } from "@/data/navData";
 import { Menu } from "lucide-react";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
 
 const Navigation = () => {
   return (
