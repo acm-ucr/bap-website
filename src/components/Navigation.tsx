@@ -14,8 +14,8 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       fixed="top"
-      expand="md"
-      className="flex w-full items-center justify-between pt-4"
+      expand="lg"
+      className="w-full items-center justify-between pt-4"
     >
       <Navbar.Brand className="pl-8">
         <Link className="flex items-center space-x-4 no-underline" href="/">
@@ -24,12 +24,15 @@ const Navigation = () => {
         </Link>
       </Navbar.Brand>
 
-      <Navbar.Toggle aria-controls="responsive-navbar-nav">
-        <Menu />
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        className="items-center"
+      >
+        <Menu className="text-white" />
       </Navbar.Toggle>
 
-      <Navbar.Collapse className="flex justify-end">
-        <Nav className="flex justify-between space-x-8 pr-8 text-2xl">
+      <Navbar.Collapse className="justify-end">
+        <Nav className="items-center justify-between pr-8 text-2xl lg:space-x-6">
           {navData.map((item, index) =>
             item.link ? (
               <Nav.Link
