@@ -11,7 +11,6 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
-  const [selected, setSelected] = useState<string>("");
   return (
     <Navbar
       collapseOnSelect
@@ -20,11 +19,7 @@ const Navigation = () => {
       className="flex w-full items-center justify-between pt-4"
     >
       <Navbar.Brand className="pl-8">
-        <Link
-          className="flex items-center space-x-4 no-underline"
-          href="/"
-          onClick={() => setSelected("")}
-        >
+        <Link className="flex items-center space-x-4 no-underline" href="/">
           <Image className="w-20" src={logo} alt="Beta Alpha Psi Logo" />
           <div className="text-4xl text-white">BETA ALPHA PSI</div>
         </Link>
@@ -43,7 +38,6 @@ const Navigation = () => {
                 key={index}
                 href={item.link}
                 className="text-white"
-                onClick={() => setSelected(item.name)}
               >
                 {item.name}
               </Nav.Link>
