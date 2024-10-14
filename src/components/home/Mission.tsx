@@ -1,6 +1,6 @@
 const Mission = () => {
   return (
-    <div className="mx-auto max-w-lg rounded-lg bg-[#b35644] p-10 text-center">
+    <div className="mx-auto max-w-lg rounded-lg bg-[#a12424] p-10 text-center">
       <h1 className="mb-6 text-3xl font-bold text-white">MISSION STATEMENT</h1>
       <p className="text-lg leading-relaxed text-white">
         It provides opportunities for service, professional development, and
