@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = ({ buttonText }) => {
   return (
-    <button className="bg-rishi-white duration-300 border-rishi-orange text-rishi-black font-urbanist border-2 px-6 rounded-md px-4 rounded text-2xl hover:bg-rishi-orange hover:scale-110">
+    <button className="bg-rishi-white border-rishi-orange text-rishi-black font-urbanist hover:bg-rishi-orange rounded rounded-md border-2 px-4 px-6 text-2xl duration-300 hover:scale-110">
       {buttonText}
     </button>
   );
