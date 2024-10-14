@@ -13,7 +13,7 @@ const EventGallery = () => {
         {/* Main Image */}
         <div className="relative">
           <Image
-            src="/ucr_event.png"
+            src="/ucr_event.webp"
             alt="UCR Event"
             width={1000}
             height={1000}
