@@ -1,7 +1,8 @@
 const Mission = () => {
   return (
-    <div className="">
-      <p>Mission</p>
+    <div className="bg-[#b35644] p-10 rounded-lg text-center max-w-lg mx-auto">
+      <h1></h1>
+      <p></p>
     </div>
   );
 };
