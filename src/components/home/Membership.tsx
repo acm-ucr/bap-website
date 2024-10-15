@@ -1,18 +1,10 @@
 const Membership = () => {
   return (
     <div
-      className=""
-      style={{
-        display: "block",
-        backgroundColor: "#AF272F",
-        textAlign: "center",
-        width: "375px",
-        height: "105px",
-        font: "status-bar",
-      }}
+      className="flex-col bg-bap-red-200 text-center py-3 px-3 "
     >
-      <p style={{ fontSize: "3em", margin: "5px 0 10px 0" }}> MEMBERSHIP</p>
-      <p style={{ fontSize: "1em" }}>
+      <p className="text-2xl"> MEMBERSHIP</p>
+      <p className="text-xs">
         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod
         Tempor Incididunt Ut Labore Et Dolore Magna Aliqua
       </p>
