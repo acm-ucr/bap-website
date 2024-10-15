@@ -20,7 +20,7 @@ const Navigation = () => {
       <Navbar.Brand className="pl-8">
         <Link className="flex items-center space-x-4 no-underline" href="/">
           <Image className="w-20" src={logo} alt="Beta Alpha Psi Logo" />
-          <div className="text-4xl text-white">BETA ALPHA PSI</div>
+          <div className="text-5xl font-normal text-white">BETA ALPHA PSI</div>
         </Link>
       </Navbar.Brand>
 
@@ -41,14 +41,14 @@ const Navigation = () => {
                 href={item.link}
                 className="text-white"
               >
-                {item.name}
+                <div className="font-light">{item.name}</div>
               </Nav.Link>
             ) : (
               <NavDropdown
                 key={index}
                 title={
                   <div className="flex items-center text-white">
-                    <div>{item.name}</div>
+                    <div className="font-light">{item.name}</div>
                     <style>
                       {`
                           .dropdown-toggle:after {
