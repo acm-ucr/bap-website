@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <div className="AboutUs">
-      <p>AboutUs section</p>
+      <p>About Us</p>
       <p>
         Founded in 1919, Beta Alpha Psi is an honors organization for financial
         information students and professionals. There are over 300 chapters on

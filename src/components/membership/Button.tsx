@@ -1,8 +1,6 @@
-import React from "react";
-
-const Button: React.FC = () => {
+const Button = () => {
   return (
-    <div className="rounded-lg bg-red-700 px-6 py-3 font-bold text-white transition hover:scale-105 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 active:scale-95">
+    <div className="rounded-md bg-red-600 px-4 py-2 font-semibold text-white transition duration-300 hover:bg-red-700 active:bg-red-800">
       MEMBERSHIP FORM
     </div>
   );
