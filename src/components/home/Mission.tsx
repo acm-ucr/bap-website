@@ -1,7 +1,7 @@
 const Mission = () => {
   return (
-    <div className="mx-auto max-w-lg bg-[#a12424] px-10 pb-10 pt-0 text-center">
-      <h1 className="mb-6 text-3xl font-normal text-white">
+    <div className="mx-auto max-w-lg bg-[#a12424] px-10 pb-10 pt-10 text-center">
+      <h1 className="mb-6 text-4xl font-thin text-white">
         MISSION STATEMENT
       </h1>
       <p className="text-lg leading-relaxed text-white">
