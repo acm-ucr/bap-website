@@ -11,15 +11,15 @@ const Footer = () => {
         <div className="flex w-1/2 flex-row items-end">
           <div className="flex flex-row items-center pl-5">
             <Image src={bap} className="mr-4 w-1/6 text-3xl" alt="bap logo" />
-            <p className="text-4xl mb-0">BETA ALPHA PSI</p>
+            <p className="mb-0 text-4xl">BETA ALPHA PSI</p>
           </div>
         </div>
-        <div className="flex flex-col text-right gap-2">
-          <p className="text-3xl mb-0">Contact Us</p>
+        <div className="flex flex-col gap-2 text-right">
+          <p className="mb-0 text-3xl">Contact Us</p>
           <Link
             href="mailto:betaalphapsi@gmail.com"
             target="_blank"
-            className="text-2xl hover:text-gray-200 mb-0"
+            className="mb-0 text-2xl hover:text-gray-200"
           >
             <p>betaalphapsi@gmail.com</p>
           </Link>
