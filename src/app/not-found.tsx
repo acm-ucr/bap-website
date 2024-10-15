@@ -8,7 +8,7 @@ const NotFound = () => {
         Page Not Found
       </div>
 
-      <Link className ="no-underline" href="/">
+      <Link className="no-underline" href="/">
         <div className="flex py-4">
           <button className="font-urbanist hover:bg-bap-orange rounded border-2 border-bap-brown-100 bg-bap-brown-400 px-6 text-2xl text-bap-red-200 duration-300 hover:scale-110">
             Back to Home
