@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const opensans = Open_Sans({
   subsets: ["latin"],
