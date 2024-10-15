@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 const EventGallery = () => {
   return (
-    <div className="pt-4">
+    <div className="pt-4 relative">
       <div className="relative flex justify-center items-center">
-        <div className="relative flex justify-between items-center w-full">
+        <div className="relative w-full">
           <button
-            className="bg-transparent border-none"
-            style={{ width: '500px', height: '500px'}}
+            className="bg-transparent border-none absolute"
+            style={{ width: '130px', height: '130px', left: '0px', top: '50%' }}
             onClick={() => alert("Left arrow clicked")}
           >
           </button>
@@ -23,8 +23,8 @@ const EventGallery = () => {
           />
 
           <button
-            className="bg-transparent border-none"
-            style={{ width: '500px', height: '500px', marginLeft: '-50px' }}
+            className="bg-transparent border-none absolute"
+            style={{ width: '150px', height: '150px', right: '0px', top: '50%' }}
             onClick={() => alert("Right arrow clicked")}
           >
           </button>
