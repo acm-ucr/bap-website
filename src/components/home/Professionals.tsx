@@ -1,7 +1,7 @@
 const Professional = () => {
   return (
-    <div className="">
-      <p>Professional</p>
+    <div className="featured-professionals">
+      <p>PFEATURED PROFESSIONALS</p>
     </div>
   );
 };
