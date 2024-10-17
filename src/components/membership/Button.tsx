@@ -1,7 +1,9 @@
 const Button = () => {
   return (
-    <div className="rounded-md bg-red-600 px-4 py-2 font-semibold text-white transition duration-300 hover:bg-red-700 active:bg-red-800">
-      MEMBERSHIP FORM
+    <div className="flex justify-center">
+      <p className="rounded-sm bg-red-800 px-4 py-2 font-normal text-white tracking-widest lg:font-sans">
+        MEMBERSHIP FORM
+      </p>
     </div>
   );
 };
