@@ -15,7 +15,6 @@ interface Events {
 }
 
 const CustomCalendar = ({ events }: Events) => {
-  const [event, setEvent] = useState<Event>({});
   const [date, setDate] = useState<Date>(new Date());
 
   return (
@@ -41,7 +40,6 @@ const CustomCalendar = ({ events }: Events) => {
           },
         }}
         eventPropGetter={() => ({ className: "p-0 !bg-transparent" })}
-        onSelectEvent={(e) => setEvent(e)}
       />
     </div>
   );
