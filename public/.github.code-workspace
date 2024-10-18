@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "../.github",
+    },
+    {
+      "path": "../.husky",
+    },
+    {
+      "path": "../.vscode",
+    },
+    {
+      "path": ".",
+    },
+    {
+      "path": "../src",
+    },
+  ],
+}
