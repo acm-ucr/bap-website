@@ -1,5 +1,5 @@
 import React from 'react';
-import BoardMemberCard from '@/components/board/BoardMemberCard'; // Adjust this path if needed
+import BoardMemberCard from '@/components/board/BoardMemberCard';
 
 const BoardPage = () => {
   return (
