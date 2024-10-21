@@ -21,7 +21,6 @@ const Mission = () => {
       </div>
 
       <div className="absolute bottom-0 left-1/2 flex h-[100px] w-[600px] -translate-x-1/2 transform items-center justify-center bg-[#b4966fa4] p-4 text-center text-2xl text-white">
-        
         “Knowledge Is The Key To Opening The Doors Of The Financial World”
       </div>
     </div>
