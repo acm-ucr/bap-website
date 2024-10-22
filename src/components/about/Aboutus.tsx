@@ -2,8 +2,7 @@ const AboutUs = () => {
   return (
     <div className="mb-8 max-w-xl text-left md:mb-0 md:mr-8 md:w-1/4">
       <h1 className="mb-4 text-3xl font-semibold text-white sm:font-extralight">
-        {" "}
-        ABOUT US{" "}
+        ABOUT US
       </h1>
       <info className="text-lg leading-relaxed">
         Founded in 1919, Beta Alpha Psi is an honors organization for financial
