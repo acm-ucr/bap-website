@@ -1,4 +1,3 @@
-
 export async function generateStaticParams() {
   const pages = ["resume", "cover", "interview", "prof"];
 
