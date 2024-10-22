@@ -1,11 +1,7 @@
 const Mission = () => {
   return (
     <div className="relative">
-      <img
-        src="/clubimage2.webp"
-        alt="Club Image"
-        className=" object-cover"
-      />
+      <img src="/clubimage2.webp" alt="Club Image" className="object-cover" />
 
       <div className="absolute left-0 top-[-5%] max-w-lg bg-[#a12424] px-10 pb-20 pt-10 text-center">
         <h1 className="mb-6 text-4xl font-thin text-white">
