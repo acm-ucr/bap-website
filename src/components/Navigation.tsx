@@ -67,7 +67,20 @@ const Navigation = () => {
                     <style>
                       {`
                           .dropdown-toggle:after {
-                              display: none;
+                            display: none;
+                          }
+                          .dropdown-menu { 
+                            padding: 0;
+                            border-radius: 5px;
+                            background-color: #716454;
+                            overflow: hidden;
+                          }
+                          .dropdown-item {
+                            color: white;
+                          }
+                          .dropdown-item:hover {
+                            background-color: #aaa398;
+                            color: white;
                           }
                         `}
                     </style>
