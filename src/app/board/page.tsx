@@ -1,13 +1,16 @@
-import Title from "@/components/Title";
-import Board from "@/components/board/Board";
-import PrevBoard from "@/components/board/PrevBoard";
-const Boards = () => {
+import React from "react";
+import BoardMemberCard from "@/components/board/BoardMemberCard";
+
+const BoardPage = () => {
   return (
-    <div className="flex w-screen flex-col items-center">
-      <Title />
-      <Board />
-      <PrevBoard />
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <div className="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 lg:grid-cols-3">
+        <BoardMemberCard title="Faculty Advisor" name="Professor John Doe" />
+        <BoardMemberCard title="President" name="Jane Smith" />
+        <BoardMemberCard title="Vice President" name="Alice Johnson" />
+      </div>
     </div>
   );
 };
-export default Boards;
+
+export default BoardPage;
