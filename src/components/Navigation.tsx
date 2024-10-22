@@ -7,9 +7,18 @@ import Image from "next/image";
 import logo from "@/public/bap.webp";
 import { navData } from "@/data/navData";
 import { Menu } from "lucide-react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const Navigation = () => {
+  // determines if dropdown has been opened; set false at start
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  // function changes boolean of isDropdownOpen
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <Navbar
       collapseOnSelect
@@ -45,23 +54,58 @@ const Navigation = () => {
                 <div className="font-light">{item.name}</div>
               </Nav.Link>
             ) : (
+              // Resources Drop down
               <NavDropdown
                 key={index}
                 title={
-                  <div className="flex items-center text-white">
+                  <div
+                    className="flex items-center text-white"
+                    onClick={toggleDropdown}
+                  >
                     <div className="font-light">{item.name}</div>
                     <style>
                       {`
                           .dropdown-toggle:after {
-                              display: none;
+                            display: none;
+                          }
+                          .dropdown-menu { 
+                            padding: 0;
+                            border-radius: 5px;
+                            background-color: #716454;
+                            overflow: hidden;
+                          }
+                          .dropdown-item {
+                            color: white;
+                          }
+                          .dropdown-item:hover {
+                            background-color: #aaa398;
+                            color: white;
                           }
                         `}
                     </style>
-                    <ChevronDown />
+                    {/* Conditional state that determines what boolean and changes icon */}
+                    {isDropdownOpen ? <ChevronUp /> : <ChevronDown />}
                   </div>
                 }
               >
-                <NavDropdown.Item></NavDropdown.Item>
+                <div className="my-0 py-0">
+                  <NavDropdown.Item onClick={toggleDropdown}>
+                    {" "}
+                    Resume{" "}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={toggleDropdown}>
+                    {" "}
+                    Cover Letter{" "}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={toggleDropdown}>
+                    {" "}
+                    Interviewing{" "}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={toggleDropdown}>
+                    {" "}
+                    Professionalism{" "}
+                  </NavDropdown.Item>
+                </div>
               </NavDropdown>
             ),
           )}
