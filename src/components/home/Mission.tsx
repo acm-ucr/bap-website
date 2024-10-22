@@ -1,7 +1,14 @@
+import Image from "next/image";
+
 const Mission = () => {
   return (
     <div className="relative">
-      <img src="/clubimage2.webp" alt="Club Image" className="object-cover" />
+      <Image
+        src="/clubimage2.webp"
+        width={2000}
+        height={700}
+        alt="Club Image"
+      />
 
       <div className="absolute left-0 top-[-5%] max-w-lg bg-[#a12424] px-10 pb-20 pt-10 text-center">
         <h1 className="mb-6 text-4xl font-thin text-white">
