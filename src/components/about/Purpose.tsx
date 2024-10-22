@@ -17,9 +17,8 @@ const Purpose = () => {
         academic excellence, and a strong sense of community among its members.
       </p>
 
-      
-      <div className = "flex flex-row bg-bap-brown-100 bg-opacity-50 place-items-center p-3">
-        <div className="flex flex-col justify-center items-center px-3">
+      <div className="flex flex-row place-items-center bg-bap-brown-100 bg-opacity-50 p-3">
+        <div className="flex flex-col items-center justify-center px-3">
           <Image src={diploma} className="l-40 w-40"></Image>
           <span className="text-center text-2xl">
             ACADEMIC <br />
@@ -28,7 +27,7 @@ const Purpose = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center px-3">
-          <Image src= {thinking} className="l-40 w-40"></Image>
+          <Image src={thinking} className="l-40 w-40"></Image>
           <span className="text-center text-2xl">
             PERSONAL <br />
             DEVELOPMENT
@@ -44,15 +43,13 @@ const Purpose = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center px-3">
-          <Image src= {discussion} className="l-40 w-40"></Image>
+          <Image src={discussion} className="l-40 w-40"></Image>
           <span className="text-center text-2xl">
             SENSE OF <br />
             COMMUNITY
           </span>
         </div>
-
       </div>
-     
     </div>
   );
 };
