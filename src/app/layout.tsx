@@ -26,7 +26,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${opensans.className} flex min-h-screen flex-col justify-between bg-bap-brown-400 text-white`}
+        className={`${opensans.className} flex min-h-screen flex-col bg-bap-brown-400 text-white`}
       >
         <ReactQueryClientProvider>
           <Navigation />
