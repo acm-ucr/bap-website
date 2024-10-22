@@ -1,7 +1,16 @@
 const Membership = () => {
   return (
-    <div className="">
-      <p>Membership</p>
+    <div className="flex-col bg-bap-red-200 px-3 py-2.5 text-center">
+      <p className="text-2xl"> MEMBERSHIP</p>
+      <p className="text-xs">
+        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod
+        Tempor Incididunt Ut Labore Et Dolore Magna Aliqua
+      </p>
+      <button>
+        <p className="rounded-sm bg-bap-brown-100 bg-opacity-[34%] px-4 py-2.5 text-center text-lg shadow-md shadow-black">
+          Join Us
+        </p>
+      </button>
     </div>
   );
 };

@@ -7,6 +7,7 @@ const About = () => {
     <div className="flex w-screen flex-col items-center">
       <Title />
       <AboutUs />
+
       <Purpose />
     </div>
   );

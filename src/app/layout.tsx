@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const opensans = Open_Sans({
   subsets: ["latin"],
@@ -25,11 +26,12 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${opensans.className} flex min-h-screen flex-auto flex-col justify-between bg-bap-brown-400 text-white`}
+        className={`${opensans.className} flex min-h-screen flex-col bg-bap-brown-400 text-white`}
       >
         <ReactQueryClientProvider>
           <Navigation />
-          {children}
+          <div className="pt-32"></div>
+          <div>{children}</div>
           <Footer />
         </ReactQueryClientProvider>
       </body>
