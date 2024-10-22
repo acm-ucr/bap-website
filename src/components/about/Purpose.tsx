@@ -17,7 +17,7 @@ const Purpose = () => {
 
       <div className="flex flex-row place-items-center bg-bap-brown-100 bg-opacity-50 p-3">
         <div className="flex flex-col items-center justify-center px-3">
-          <Image all="diploma" src={diploma} className="l-40 w-40"></Image>
+          <Image alt="diploma" src={diploma} className="l-40 w-40"></Image>
           <span className="text-center text-2xl">
             ACADEMIC <br />
             EXCELLENCE
@@ -25,7 +25,7 @@ const Purpose = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center px-3">
-          <Image all="thinking" src={thinking} className="l-40 w-40"></Image>
+          <Image alt="thinking" src={thinking} className="l-40 w-40"></Image>
           <span className="text-center text-2xl">
             PERSONAL <br />
             DEVELOPMENT
@@ -33,7 +33,7 @@ const Purpose = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center px-3">
-          <Image all="handshake" src={handshake} className="l-40 w-40"></Image>
+          <Image alt="handshake" src={handshake} className="l-40 w-40"></Image>
           <span className="text-center text-2xl">
             PROFESSIONAL <br />
             DEVELOPMENT
@@ -42,7 +42,7 @@ const Purpose = () => {
 
         <div className="flex flex-col items-center justify-center px-3">
           <Image
-            all="discussion"
+            alt="discussion"
             src={discussion}
             className="l-40 w-40"
           ></Image>
