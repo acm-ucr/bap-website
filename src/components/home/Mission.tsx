@@ -1,13 +1,13 @@
 const Mission = () => {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative">
       <img
         src="/clubimage2.webp"
         alt="Club Image"
-        className="h-full w-full object-cover"
+        className=" object-cover"
       />
 
-      <div className="absolute left-0 top-0 max-w-lg bg-[#a12424] px-10 pb-20 pt-10 text-center">
+      <div className="absolute left-0 top-[-5%] max-w-lg bg-[#a12424] px-10 pb-20 pt-10 text-center">
         <h1 className="mb-6 text-4xl font-thin text-white">
           MISSION STATEMENT
         </h1>
@@ -20,7 +20,7 @@ const Mission = () => {
         </p>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 flex h-[100px] w-[600px] -translate-x-1/2 transform items-center justify-center bg-[#b4966fa4] p-4 text-center text-2xl text-white">
+      <div className="absolute bottom-[10%] left-1/2 flex h-[100px] w-[600px] -translate-x-1/2 transform items-center justify-center bg-[#b4966fa4] p-4 text-center text-2xl text-white">
         “Knowledge Is The Key To Opening The Doors Of The Financial World”
       </div>
     </div>
