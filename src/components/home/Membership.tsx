@@ -7,7 +7,7 @@ const Membership = () => {
         Tempor Incididunt Ut Labore Et Dolore Magna Aliqua
       </p>
       <button>
-        <p className="rounded-sm bg-red-400 px-4 py-2.5 text-center text-lg shadow-md shadow-black">
+        <p className="rounded-sm bg-bap-brown-100 bg-opacity-[34%] px-4 py-2.5 text-center text-lg shadow-md shadow-black">
           Join Us
         </p>
       </button>
