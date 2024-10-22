@@ -22,7 +22,6 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      fixed="top"
       expand="lg"
       className="w-full items-center justify-between pt-4"
     >
