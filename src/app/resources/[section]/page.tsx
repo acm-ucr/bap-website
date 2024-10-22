@@ -1,5 +1,3 @@
-import Title from "@/components/Title";
-
 export async function generateStaticParams() {
   const pages = ["resume", "cover", "interview", "prof"];
 
@@ -10,7 +8,6 @@ export async function generateStaticParams() {
 export default function Page({ params }: { params: { section: string } }) {
   return (
     <div>
-      <Title />
       <p>Current resource page: {params.section}</p>
     </div>
   );
