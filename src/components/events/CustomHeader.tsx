@@ -16,9 +16,9 @@ const CustomHeader = (props: HeaderProps) => {
   };
 
   return (
-    <div className="-mx-1 bg-bap-red-200 py-4 text-3xl">
-      <div className="lg:hidden xl:block">{days[props.label]}</div>
-      <div className="lg:block xl:hidden">{props.label}</div>
+    <div className="text-md -mx-1 bg-bap-red-200 py-4 sm:text-xl 2xl:text-2xl">
+      <div className="hidden xl:block">{days[props.label]}</div>
+      <div className="block xl:hidden">{props.label}</div>
     </div>
   );
 };
