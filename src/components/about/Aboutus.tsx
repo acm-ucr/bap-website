@@ -8,7 +8,7 @@ const AboutUs = () => {
         ABOUT US
       </h1>
 
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         <p className="text-lg leading-relaxed">
           Founded in 1919, Beta Alpha Psi is an honors organization for
           financial information students and professionals. There are over 300
@@ -17,7 +17,7 @@ const AboutUs = () => {
           sorority but an honors organization. UC Riverside’s Nu Rho Chapter was
           founded in Winter 2015 under the presidency of Luke Hatch.
         </p>
-        <Image src={bap} className="max-w-md" alt="image" />
+        <Image src={bap} className="max-w-full md:max-w-md" alt="image" />
       </div>
     </div>
   );
