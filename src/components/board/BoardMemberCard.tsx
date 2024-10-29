@@ -7,9 +7,7 @@ type Props = {
 
 const BoardMemberCard: React.FC<Props> = ({ title, name }) => {
   return (
-    <button
-      className="bg-red-700 text-white p-3 rounded-md text-center w-52 border-none cursor-pointer"
-    >
+    <button className="w-52 cursor-pointer rounded-md border-none bg-red-700 p-3 text-center text-white">
       <div className="font-bold">{title}</div>
       <div>{name}</div>
     </button>
