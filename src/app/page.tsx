@@ -3,15 +3,17 @@ import Landing from "@/components/home/Landing";
 import Membership from "@/components/home/Membership";
 import Mission from "@/components/home/Mission";
 import Professional from "@/components/home/Professionals";
+import MembershipParagraph from "@/components/membership/MembershipParagraph";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center">
+    <div className="flex w-screen flex-col items-center justify-center">
       <Landing />
-      <Mission />
       <EventGallery />
+      <Mission />
       <Membership />
       <Professional />
+      <MembershipParagraph />
     </div>
   );
 };
