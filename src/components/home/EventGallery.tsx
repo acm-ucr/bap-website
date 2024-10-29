@@ -24,36 +24,34 @@ const EventGallery = () => {
   };
 
   return (
-    <div className="flex items-center justify-center whitespace-nowrap p-3 text-white shadow-lg">
-      <div className="flex w-3/4 flex-row items-center justify-center">
-        <div className="relative">
-          <div className="m-4">
-            <div className="relative">
-              <div className="absolute left-0 top-[50%] aspect-square opacity-80">
-                <SlArrowLeft
-                  size={50}
-                  className="cursor-pointer bg-red-700 p-2 text-xl text-white"
-                  onClick={prevImage}
-                />
-              </div>
-              <Image
-                src={images[currentImageIndex]}
-                alt="club image 1"
-                className="w-full"
-              />
-              <div className="absolute right-0 top-[48%] aspect-square opacity-80">
-                <SlArrowRight
-                  size={50}
-                  className="cursor-pointer bg-red-700 p-2 text-xl text-white"
-                  onClick={nextImage}
-                />
-              </div>
-            </div>
-          </div>
-          <p className="z-1 absolute right-0 top-0 m-0 bg-red-800 p-4 text-2xl shadow-2xl">
-            EVENT GALLERY
-          </p>
+    <div className="flex w-11/12 flex-row items-center justify-center">
+      <div className="relative">
+        <div className="absolute left-0 top-[50%] aspect-square opacity-80 shadow-lg">
+          <SlArrowLeft
+            size={65}
+            className="cursor-pointer bg-red-700 p-2 text-white"
+            onClick={prevImage}
+          />
         </div>
+        <div className="object flex h-[700px] place-items-center overflow-clip">
+          <Image
+            src={images[currentImageIndex]}
+            alt="club image"
+            className=""
+            width={2000}
+            height={2000}
+          />
+        </div>
+        <div className="absolute right-0 top-[50%] aspect-square opacity-80 shadow-2xl">
+          <SlArrowRight
+            size={65}
+            className="cursor-pointer bg-red-700 p-2 text-2xl text-white"
+            onClick={nextImage}
+          />
+        </div>
+        <p className="z-1 absolute right-[-2%] top-[-5%] m-0 bg-red-800 p-4 text-3xl shadow-2xl">
+          EVENT GALLERY
+        </p>
       </div>
     </div>
   );

@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className="flex w-screen flex-col items-center justify-center">
       <Landing />
-      <EventGallery />
       <Mission />
+      <EventGallery />
       <Membership />
       <Professional />
     </div>
