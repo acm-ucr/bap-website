@@ -1,7 +1,7 @@
 const EventCard = () => {
   return (
-    <div className="mx-4 my-10 flex h-auto w-[80%] flex-col justify-between rounded-md bg-bap-brown-100 bg-opacity-50 py-8 pl-10 sm:mx-8 md:mx-12 lg:mx-24">
-      <p className="text-3x1 mb-4 w-[80%] sm:text-4xl lg:text-5xl">
+    <div className="mx-4 my-10 flex h-[25%] w-[65%] flex-col justify-between rounded-md bg-bap-brown-100 bg-opacity-50 py-7 pl-10 sm:mx-8 md:mx-12 lg:mx-24">
+      <p className="text-3x1 mb-4 w-[70%] sm:text-4xl lg:text-5xl">
         WEEKLY MEETING
       </p>
       <p className="mb-1 w-[80%] text-xl font-semibold text-bap-red-200 sm:text-2xl">
