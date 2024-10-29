@@ -24,7 +24,7 @@ const EventGallery = () => {
   };
 
   return (
-    <div className="flex w-11/12 flex-row items-center justify-center">
+    <div className="flex w-[94%] flex-row items-center justify-center">
       <div className="relative">
         <div className="absolute left-0 top-[50%] aspect-square opacity-80 shadow-lg">
           <SlArrowLeft
@@ -33,7 +33,7 @@ const EventGallery = () => {
             onClick={prevImage}
           />
         </div>
-        <div className="object flex h-[700px] place-items-center overflow-clip">
+        <div className="flex h-[700px] place-items-center overflow-clip">
           <Image
             src={images[currentImageIndex]}
             alt="club image"
@@ -49,7 +49,7 @@ const EventGallery = () => {
             onClick={nextImage}
           />
         </div>
-        <p className="z-1 absolute right-[-2%] top-[-5%] m-0 bg-red-800 p-4 text-3xl shadow-2xl">
+        <p className="z-1 absolute right-0 top-[-5%] m-0 bg-red-800 p-4 text-3xl shadow-2xl">
           EVENT GALLERY
         </p>
       </div>
