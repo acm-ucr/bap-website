@@ -67,9 +67,9 @@ const Purpose = () => {
           ))}
         </div>
 
-        <div className="w-full">
+        <div className="max-h-2 w-full bg-bap-red-200 p-8 pb-40 pt-5">
           {active && (
-            <p className="bg-bap-red-200 p-16 text-xl">
+            <p className="h-full text-xl">
               {items.find((item) => item.id === active)?.desc}
             </p>
           )}
