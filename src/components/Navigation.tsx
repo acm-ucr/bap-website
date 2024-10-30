@@ -89,22 +89,20 @@ const Navigation = () => {
                 }
               >
                 <div className="my-0 py-0">
-                  <NavDropdown.Item onClick={toggleDropdown}>
-                    {" "}
-                    Resume{" "}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item onClick={toggleDropdown}>
-                    {" "}
-                    Cover Letter{" "}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item onClick={toggleDropdown}>
-                    {" "}
-                    Interviewing{" "}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item onClick={toggleDropdown}>
-                    {" "}
-                    Professionalism{" "}
-                  </NavDropdown.Item>
+                  {item.sub ? (
+                    item.sub.map((page, index) => (
+                      <NavDropdown.Item
+                        as={Link}
+                        key={index}
+                        href={page.link}
+                        onClick={toggleDropdown}
+                      >
+                        {" " + page.name + " "}
+                      </NavDropdown.Item>
+                    ))
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </NavDropdown>
             ),

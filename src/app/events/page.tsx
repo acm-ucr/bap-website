@@ -1,5 +1,6 @@
 import CustomCalendar from "@/components/events/Calendar";
 import EventCard from "@/components/events/EventCard";
+import Title from "@/components/Title";
 
 const Events = () => {
   const tempEvents = [
@@ -12,6 +13,9 @@ const Events = () => {
 
   return (
     <div className="flex w-screen flex-col items-center">
+      <div className="flex w-11/12 justify-start">
+        <Title title="UPCOMING EVENTS" />
+      </div>
       <EventCard />
       <EventCard />
       <EventCard />
