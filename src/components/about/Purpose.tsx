@@ -11,8 +11,6 @@ const Purpose = ({}) => {
   const [active, setActive] = useState(null);
   console.log("current state", active);
 
-  const item = "theo";
-
   const items = [
     {
       id: "ACADEMIC EXCELLENCE",
@@ -43,10 +41,6 @@ const Purpose = ({}) => {
       img: discussion,
     },
   ];
-
-  const handleClick = (id) => {
-    setActive(id);
-  };
 
   return (
     <div className="flex w-10/12 flex-col gap-10 p-20">
