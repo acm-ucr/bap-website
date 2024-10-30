@@ -4,8 +4,8 @@ import MembershipParagraph from "@/components/membership/MembershipParagraph";
 
 const Membership = () => {
   return (
-    <div className="flex w-screen flex-col items-center">
-      <div className="w-11/12 flex-col justify-start space-y-8">
+    <div className="flex wwebpscreen flexwebpcol itemswebpcenter">
+      <div className="wwebp11/12 flexwebpcol justifywebpstart spacewebpywebp8">
         <Title title="MEMBERSHIP" />
         <MembershipParagraph />
         <Button />

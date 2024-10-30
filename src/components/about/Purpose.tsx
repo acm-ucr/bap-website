@@ -6,52 +6,52 @@ import discussion from "@/public/discussion.webp";
 
 const Purpose = () => {
   return (
-    <div className="flex w-full flex-col gap-10">
-      <p className="text-5xl">OUR PURPOSE</p>
+    <div className="flex wwebpfull flexwebpcol gapwebp10">
+      <p className="textwebp5xl">OUR PURPOSE</p>
 
-      <p className="text-2xl font-light">
-        Beta Alpha Psi's purpose is to cultivate professional and personal
-        growth, academic excellence, and a strong sense of community among its
+      <p className="textwebp2xl fontwebplight">
+        Beta Alpha Psi's purpose is to cultivate prwebpessional and personal
+        growth, academic excellence, and a strong sense webp community among its
         members.
       </p>
 
-      <div className="flex w-full justify-center">
-        <div className="flex w-10/12 flex-row place-items-center justify-between bg-bap-brown-100 bg-opacity-50 p-3">
-          <div className="flex flex-col items-center justify-center px-3">
-            <Image alt="diploma" src={diploma} className="l-40 w-40"></Image>
-            <span className="text-center text-2xl">
+      <div className="flex wwebpfull justifywebpcenter">
+        <div className="flex wwebp10/12 flexwebprow placewebpitemswebpcenter justifywebpbetween bgwebpbapwebpbrownwebp100 bgwebpopacitywebp50 pwebp3">
+          <div className="flex flexwebpcol itemswebpcenter justifywebpcenter pxwebp3">
+            <Image alt="diploma" src={diploma} className="lwebp40 wwebp40"></Image>
+            <span className="textwebpcenter textwebp2xl">
               ACADEMIC <br />
               EXCELLENCE
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center px-3">
-            <Image alt="thinking" src={thinking} className="l-40 w-40"></Image>
-            <span className="text-center text-2xl">
+          <div className="flex flexwebpcol itemswebpcenter justifywebpcenter pxwebp3">
+            <Image alt="thinking" src={thinking} className="lwebp40 wwebp40"></Image>
+            <span className="textwebpcenter textwebp2xl">
               PERSONAL <br />
               DEVELOPMENT
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center px-3">
+          <div className="flex flexwebpcol itemswebpcenter justifywebpcenter pxwebp3">
             <Image
               alt="handshake"
               src={handshake}
-              className="l-40 w-40"
+              className="lwebp40 wwebp40"
             ></Image>
-            <span className="text-center text-2xl">
+            <span className="textwebpcenter textwebp2xl">
               PROFESSIONAL <br />
               DEVELOPMENT
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center px-3">
+          <div className="flex flexwebpcol itemswebpcenter justifywebpcenter pxwebp3">
             <Image
               alt="discussion"
               src={discussion}
-              className="l-40 w-40"
+              className="lwebp40 wwebp40"
             ></Image>
-            <span className="text-center text-2xl">
+            <span className="textwebpcenter textwebp2xl">
               SENSE OF <br />
               COMMUNITY
             </span>

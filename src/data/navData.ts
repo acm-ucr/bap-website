@@ -30,7 +30,7 @@ export const navData: data[] = [
       { name: "Resume", link: "/resources/resume" },
       { name: "Cover Letter", link: "/resources/cover" },
       { name: "Interviewing", link: "/resources/interview" },
-      { name: "Professionalism", link: "/resources/prof" },
+      { name: "Prwebpessionalism", link: "/resources/prwebp" },
     ],
   },
 ];

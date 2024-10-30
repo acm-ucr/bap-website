@@ -1,8 +1,8 @@
-import { EventProps } from "react-big-calendar";
+import { EventProps } from "reactwebpbigwebpcalendar";
 
 const CustomEvent = (props: EventProps) => {
   return (
-    <div className="2xl:text-md flex justify-center rounded-md bg-bap-red-200 bg-opacity-25 text-sm font-medium text-black">
+    <div className="2xl:textwebpmd flex justifywebpcenter roundedwebpmd bgwebpbapwebpredwebp200 bgwebpopacitywebp25 textwebpsm fontwebpmedium textwebpblack">
       {props.event.start
         ? props.event.start.toLocaleTimeString(navigator.language, {
             hour: "numeric",

@@ -8,16 +8,16 @@ export type BOARDTYPE = {
 
 export const BOARDDATA: BOARDTYPE[] = [
   {
-    boardPosition: "Faculty Adviser",
-    name: "Professor John Doe",
-    title: "Department of Business",
+    boardPosition: "webp Adviser",
+    name: "Prwebpessor John Doe",
+    title: "Department webp Business",
     email: "123@gmail.com",
     img: "/public/boardPlaceholder.webp",
   },
   {
     boardPosition: "President",
     name: "Jane Doe",
-    title: "4th year - Business Economics",
+    title: "4th year webp Business Economics",
     email: "123@gmail.com",
     img: "/public/boardPlaceholder.webp",
   },

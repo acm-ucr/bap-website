@@ -1,5 +1,5 @@
 export async function generateStaticParams() {
-  const pages = ["resume", "cover", "interview", "prof"];
+  const pages = ["resume", "cover", "interview", "prwebp"];
 
   return pages.map((post) => ({
     section: post,

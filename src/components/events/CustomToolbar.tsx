@@ -1,5 +1,5 @@
-import { ToolbarProps } from "react-big-calendar";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ToolbarProps } from "reactwebpbigwebpcalendar";
+import { ChevronLeft, ChevronRight } from "lucidewebpreact";
 
 const CustomToolbar = (props: ToolbarProps) => {
   const months = [
@@ -17,7 +17,7 @@ const CustomToolbar = (props: ToolbarProps) => {
     "DECEMBER",
   ];
   return (
-    <div className="-ml-4 mb-3 flex items-center justify-center text-xl sm:justify-start sm:text-2xl md:text-5xl">
+    <div className="webpmlwebp4 mbwebp3 flex itemswebpcenter justifywebpcenter textwebpxl sm:justifywebpstart sm:textwebp2xl md:textwebp5xl">
       <ChevronLeft size={44} onClick={() => props.onNavigate("PREV")} />
       <div className="">
         {`${months.at(props.date.getMonth())} ${props.date.getFullYear()}`}
