@@ -16,7 +16,7 @@ const Purpose = () => {
       id: "ACADEMIC EXCELLENCE",
       desc: "By surrounding yourself with like-minded individuals, you will be able to engage in a supportive and motivating environment. Our GPA requirement of 3.2 helps maintain our professional reputation while encouraging members to sustain strong academic performance. We want to recognize members and reward academic excellence while inspiring all members to achieve their best.",
       className:
-        "flex flex-col bg-bap-brown-100 bg-opacity-50 text-white hover:bg-bap-brown-100 align-items-center",
+        "flex flex-col bg-bap-brown-100 bg-opacity-50 text-white hover:bg-bap-brown-100 align-items-center ",
       img: diploma,
     },
     {
@@ -52,28 +52,24 @@ const Purpose = () => {
         members.
       </p>
 
-      <div className="align-items-center flex w-full flex-col">
+      <div className="flex w-full flex-col items-center">
         <div className="flex w-full flex-row">
           {items.map((item) => (
             <button
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} px-4 py-10 text-2xl`}
+              className={`${item.className} w-full px-4 py-10 text-2xl`}
             >
-              <Image
-                src={item.img}
-                alt={item.id}
-                className="l-40 mb-3 flex w-40 flex-row"
-              />
+              <Image src={item.img} alt={item.id} className="l-40 mb-3 w-40" />
 
               {item.id}
             </button>
           ))}
         </div>
 
-        <div className="description w-full">
+        <div className="w-full">
           {active && (
-            <p className="flex flex-row bg-bap-red-200 p-2">
+            <p className="bg-bap-red-200 p-16 text-xl">
               {items.find((item) => item.id === active)?.desc}
             </p>
           )}
