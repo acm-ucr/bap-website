@@ -7,7 +7,7 @@ import discussion from "@/public/discussion.webp";
 
 import { useState } from "react";
 
-const Purpose = ({}) => {
+const Purpose = () => {
   const [active, setActive] = useState(null);
   console.log("current state", active);
 
