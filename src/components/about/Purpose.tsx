@@ -43,7 +43,7 @@ const Purpose = () => {
   ];
 
   return (
-    <div className="flex w-10/12 flex-col gap-10 p-20">
+    <div className="flex w-full flex-col gap-10">
       <p className="text-5xl">OUR PURPOSE</p>
 
       <p className="text-2xl font-light">
@@ -51,7 +51,6 @@ const Purpose = () => {
         growth, academic excellence, and a strong sense of community among its
         members.
       </p>
-
       <div className="flex w-full flex-col items-center">
         <div className="flex w-full flex-row">
           {items.map((item) => (
