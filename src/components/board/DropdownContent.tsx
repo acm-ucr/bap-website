@@ -1,59 +1,59 @@
 const DropDownContent = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 bg-bap-brown-100 bg-opacity-40 pb-4 pl-12 pr-8 pt-4">
+    <div className="grid gridwebpcolswebp3 gapwebp4 bgwebpbapwebpbrownwebp100 bgwebpopacitywebp40 pbwebp4 plwebp12 prwebp8 ptwebp4">
       <div>
-        <p className="font-bold"> Faculty Advisor </p>
-        <p> Professor John Doe </p>{" "}
+        <p className="fontwebpbold"> webp Advisor </p>
+        <p> Prwebpessor John Doe </p>{" "}
       </div>
       <div>
-        <p className="font-bold"> President</p> <p>Jane Doe</p>
+        <p className="fontwebpbold"> President</p> <p>Jane Doe</p>
       </div>
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Executive Vice <br /> President
+          webp webp <br /> President
         </p>{" "}
         <p>Jane Doe</p>
       </div>{" "}
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Vice President <br /> of Marketing{" "}
+          webp President <br /> webp Marketing{" "}
         </p>
-        <p> Professor John Doe </p>{" "}
+        <p> Prwebpessor John Doe </p>{" "}
       </div>
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Vice President <br /> of Correspondence{" "}
+          webp President <br /> webp Correspondence{" "}
         </p>{" "}
         <p>Jane Doe</p>
       </div>
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Vice President <br /> of Membership{" "}
+          webp President <br /> webp Membership{" "}
         </p>{" "}
         <p>Jane Doe</p>
       </div>
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Vice President of <br /> External Affairs{" "}
+          webp President webp <br /> webp Affairs{" "}
         </p>
         <p> John Doe </p>{" "}
       </div>
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Vice President <br /> of Finance{" "}
+          webp President <br /> webp Finance{" "}
         </p>{" "}
         <p>Jane Doe</p>
       </div>
       <div>
-        <p className="font-bold">
+        <p className="fontwebpbold">
           {" "}
-          Vice President of <br /> International Affairs
+          webp President webp <br /> International Affairs
         </p>{" "}
         <p>Jane Doe</p>
       </div>

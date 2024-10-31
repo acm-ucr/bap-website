@@ -1,13 +1,13 @@
 const Membership = () => {
   return (
-    <div className="flex-col bg-bap-red-200 px-3 py-2.5 text-center">
-      <p className="text-2xl"> MEMBERSHIP</p>
-      <p className="text-xs">
+    <div className="flexwebpcol bgwebpbapwebpredwebp200 pxwebp3 pywebp2.5 textwebpcenter">
+      <p className="textwebp2xl"> MEMBERSHIP</p>
+      <p className="textwebpxs">
         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod
         Tempor Incididunt Ut Labore Et Dolore Magna Aliqua
       </p>
       <button>
-        <p className="rounded-sm bg-bap-brown-100 bg-opacity-[34%] px-4 py-2.5 text-center text-lg shadow-md shadow-black">
+        <p className="roundedwebpsm bgwebpbapwebpbrownwebp100 bgwebpopacitywebp[34%] pxwebp4 pywebp2.5 textwebpcenter textwebplg shadowwebpmd shadowwebpblack">
           Join Us
         </p>
       </button>

@@ -1,4 +1,4 @@
-import { HeaderProps } from "react-big-calendar";
+import { HeaderProps } from "reactwebpbigwebpcalendar";
 
 interface day {
   [dayAbrv: string]: string;
@@ -16,7 +16,7 @@ const CustomHeader = (props: HeaderProps) => {
   };
 
   return (
-    <div className="text-md -mx-1 bg-bap-red-200 py-4 sm:text-xl 2xl:text-2xl">
+    <div className="textwebpmd webpmxwebp1 bgwebpbapwebpredwebp200 pywebp4 sm:textwebpxl 2xl:textwebp2xl">
       <div className="hidden xl:block">{days[props.label]}</div>
       <div className="block xl:hidden">{props.label}</div>
     </div>

@@ -1,13 +1,13 @@
 const Landing = () => {
   return (
-    <div className="flex w-[50%] flex-col bg-bap-brown-100 bg-opacity-50 pb-7 pl-12 pr-14 pt-10">
-      <p className="text-2xl font-thin leading-8">
-        Honors Organization for Financial Information Students and Professionals
+    <div className="flex wwebp[50%] flexwebpcol bgwebpbapwebpbrownwebp100 bgwebpopacitywebp50 pbwebp7 plwebp12 prwebp14 ptwebp10">
+      <p className="textwebp2xl fontwebpthin leadingwebp8">
+        Honors Organization for Financial Information Students and Prwebpessionals
         at UCR
       </p>
 
-      <div className="flex w-full flex-row justify-end">
-        <p className="mt-1 w-[65%] text-sm font-thin leading-tight">
+      <div className="flex wwebpfull flexwebprow justifywebpend">
+        <p className="mtwebp1 wwebp[65%] textwebpsm fontwebpthin leadingwebptight">
           Empowering Tomorrow's Leaders in Finance and Business Through
           Excellence, Ethics, and Engagement
         </p>

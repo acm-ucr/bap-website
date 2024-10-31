@@ -4,8 +4,8 @@ import Title from "@/components/Title";
 
 const About = () => {
   return (
-    <div className="flex w-screen justify-center">
-      <div className="w-11/12 flex-col items-start space-y-8">
+    <div className="flex wwebpscreen justifywebpcenter">
+      <div className="wwebp11/12 flexwebpcol itemswebpstart spacewebpywebp8">
         <Title title="ABOUT" />
         <AboutUs />
         <Purpose />

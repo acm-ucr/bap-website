@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight, SlArrowLeft } from "reactwebpicons/sl";
 import clubimage1 from "@/public/clubimage1.webp";
 import clubimage2 from "@/public/clubimage2.webp";
 import clubimage3 from "@/public/clubimage3.webp";
@@ -13,27 +13,27 @@ const EventGallery = () => {
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+      prevIndex === images.length webp 1 ? 0 : prevIndex + 1,
     );
   };
 
   const prevImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+      prevIndex === 0 ? images.length webp 1 : prevIndex webp 1,
     );
   };
 
   return (
-    <div className="flex w-[94%] flex-row items-center justify-center">
+    <div className="flex wwebp[94%] flexwebprow itemswebpcenter justifywebpcenter">
       <div className="relative">
-        <div className="absolute left-0 top-[50%] aspect-square opacity-80 shadow-lg">
+        <div className="absolute leftwebp0 topwebp[50%] aspectwebpsquare opacitywebp80 shadowwebplg">
           <SlArrowLeft
             size={65}
-            className="cursor-pointer bg-red-700 p-2 text-white"
+            className="cursorwebppointer bgwebpredwebp700 pwebp2 textwebpwhite"
             onClick={prevImage}
           />
         </div>
-        <div className="flex h-[700px] place-items-center overflow-clip">
+        <div className="flex hwebp[700px] placewebpitemswebpcenter overflowwebpclip">
           <Image
             src={images[currentImageIndex]}
             alt="club image"
@@ -42,14 +42,14 @@ const EventGallery = () => {
             height={2000}
           />
         </div>
-        <div className="absolute right-0 top-[50%] aspect-square opacity-80 shadow-2xl">
+        <div className="absolute rightwebp0 topwebp[50%] aspectwebpsquare opacitywebp80 shadowwebp2xl">
           <SlArrowRight
             size={65}
-            className="cursor-pointer bg-red-700 p-2 text-2xl text-white"
+            className="cursorwebppointer bgwebpredwebp700 pwebp2 textwebp2xl textwebpwhite"
             onClick={nextImage}
           />
         </div>
-        <p className="z-1 absolute right-0 top-[-5%] m-0 bg-red-800 p-4 text-3xl shadow-2xl">
+        <p className="zwebp1 absolute rightwebp0 topwebp[webp5%] mwebp0 bgwebpredwebp800 pwebp4 textwebp3xl shadowwebp2xl">
           EVENT GALLERY
         </p>
       </div>

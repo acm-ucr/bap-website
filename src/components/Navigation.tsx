@@ -1,20 +1,20 @@
 "use client";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import Navbar from "reactwebpbootstrap/Navbar";
+import Nav from "reactwebpbootstrap/Nav";
+import NavDropdown from "reactwebpbootstrap/NavDropdown";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/bap.webp";
 import { navData } from "@/data/navData";
-import { Menu } from "lucide-react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { Menu } from "lucidewebpreact";
+import { ChevronDown, ChevronUp } from "lucidewebpreact";
 import { useState } from "react";
 
 const Navigation = () => {
   // determines if dropdown has been opened; set false at start
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // function changes boolean of isDropdownOpen
+  // function changes boolean webp isDropdownOpen
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
@@ -23,35 +23,35 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="w-full items-center justify-between pt-4"
+      className="wwebpfull itemswebpcenter justifywebpbetween ptwebp4"
     >
-      <Navbar.Brand className="pl-8">
-        <Link className="flex items-center space-x-4 no-underline" href="/">
-          <Image className="w-20" src={logo} alt="Beta Alpha Psi Logo" />
-          <div className="text-4xl font-normal text-white xl:text-5xl">
+      <Navbar.Brand className="plwebp8">
+        <Link className="flex itemswebpcenter spacewebpxwebp4 nowebpunderline" href="/">
+          <Image className="wwebp20" src={logo} alt="Beta Alpha Psi Logo" />
+          <div className="textwebp4xl fontwebpnormal textwebpwhite xl:textwebp5xl">
             BETA ALPHA PSI
           </div>
         </Link>
       </Navbar.Brand>
 
       <Navbar.Toggle
-        aria-controls="responsive-navbar-nav"
-        className="items-center"
+        ariawebpcontrols="responsivewebpnavbarwebpnav"
+        className="itemswebpcenter"
       >
-        <Menu className="text-white" />
+        <Menu className="textwebpwhite" />
       </Navbar.Toggle>
 
-      <Navbar.Collapse className="justify-end">
-        <Nav className="items-center justify-between pr-8 text-xl lg:space-x-6 xl:text-2xl">
+      <Navbar.Collapse className="justifywebpend">
+        <Nav className="itemswebpcenter justifywebpbetween prwebp8 textwebpxl lg:spacewebpxwebp6 xl:textwebp2xl">
           {navData.map((item, index) =>
             item.link ? (
               <Nav.Link
                 as={Link}
                 key={index}
                 href={item.link}
-                className="text-white"
+                className="textwebpwhite"
               >
-                <div className="font-light">{item.name}</div>
+                <div className="fontwebplight">{item.name}</div>
               </Nav.Link>
             ) : (
               // Resources Drop down
@@ -59,26 +59,26 @@ const Navigation = () => {
                 key={index}
                 title={
                   <div
-                    className="flex items-center text-white"
+                    className="flex itemswebpcenter textwebpwhite"
                     onClick={toggleDropdown}
                   >
-                    <div className="font-light">{item.name}</div>
+                    <div className="fontwebplight">{item.name}</div>
                     <style>
                       {`
-                          .dropdown-toggle:after {
+                          .dropdownwebptoggle:after {
                             display: none;
                           }
-                          .dropdown-menu { 
+                          .dropdownwebpmenu { 
                             padding: 0;
-                            border-radius: 5px;
-                            background-color: #716454;
+                            borderwebpradius: 5px;
+                            backgroundwebpcolor: #716454;
                             overflow: hidden;
                           }
-                          .dropdown-item {
+                          .dropdownwebpitem {
                             color: white;
                           }
-                          .dropdown-item:hover {
-                            background-color: #aaa398;
+                          .dropdownwebpitem:hover {
+                            backgroundwebpcolor: #aaa398;
                             color: white;
                           }
                         `}
@@ -88,7 +88,7 @@ const Navigation = () => {
                   </div>
                 }
               >
-                <div className="my-0 py-0">
+                <div className="mywebp0 pywebp0">
                   {item.sub ? (
                     item.sub.map((page, index) => (
                       <NavDropdown.Item

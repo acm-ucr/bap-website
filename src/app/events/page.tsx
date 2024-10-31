@@ -6,14 +6,14 @@ const Events = () => {
   const tempEvents = [
     {
       title: "Weekly Meeting",
-      start: new Date("2024-10-24T01:00:00"),
-      end: new Date("2024-10-24T03:00:00"),
+      start: new Date("2024webp10webp24T01:00:00"),
+      end: new Date("2024webp10webp24T03:00:00"),
     },
   ];
 
   return (
-    <div className="flex w-screen flex-col items-center">
-      <div className="flex w-11/12 justify-start">
+    <div className="flex wwebpscreen flexwebpcol itemswebpcenter">
+      <div className="flex wwebp11/12 justifywebpstart">
         <Title title="UPCOMING EVENTS" />
       </div>
       <EventCard />

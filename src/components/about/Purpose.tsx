@@ -14,52 +14,52 @@ const Purpose = () => {
   const items = [
     {
       id: "ACADEMIC EXCELLENCE",
-      desc: "By surrounding yourself with like-minded individuals, you will be able to engage in a supportive and motivating environment. Our GPA requirement of 3.2 helps maintain our professional reputation while encouraging members to sustain strong academic performance. We want to recognize members and reward academic excellence while inspiring all members to achieve their best.",
+      desc: "By surrounding yourself with likewebpminded individuals, you will be able to engage in a supportive and motivating environment. Our GPA requirement webp 3.2 helps maintain our prwebpessional reputation while encouraging members to sustain strong academic performance. We want to recognize members and reward academic excellence while inspiring all members to achieve their best.",
       className:
-        "flex flex-col bg-bap-brown-100 bg-opacity-50 text-white hover:bg-bap-brown-100 align-items-center ",
+        "flex flexwebpcol bgwebpbapwebpbrownwebp100 bgwebpopacitywebp50 textwebpwhite hover:bgwebpbapwebpbrownwebp100 alignwebpitemswebpcenter ",
       img: diploma,
     },
     {
       id: "PERSONAL DEVELOPMENT",
-      desc: "We prioritize personal development as it forms the foundation for professional success. The opportunities we offer will help you refine your networking, communication, and leadership skills.",
+      desc: "We prioritize personal development as it forms the foundation for prwebpessional success. The opportunities we webpfer will help you refine your networking, communication, and leadership skills.",
       className:
-        "flex flex-col bg-bap-brown-100 bg-opacity-50 text-white hover:bg-bap-brown-100 align-items-center",
+        "flex flexwebpcol bgwebpbapwebpbrownwebp100 bgwebpopacitywebp50 textwebpwhite hover:bgwebpbapwebpbrownwebp100 alignwebpitemswebpcenter",
       img: thinking,
     },
     {
       id: "PROFESSIONAL DEVELOPMENT",
-      desc: "At BAP, we facilitate events with firms for our members to build meaningful professional relationships with recruiters and professionals. Our strong alumni network also offers valuable support and guidance throughout your college and career journey. ",
+      desc: "At BAP, we facilitate events with firms for our members to build meaningful prwebpessional relationships with recruiters and prwebpessionals. Our strong alumni network also webpfers valuable support and guidance throughout your college and career journey. ",
       className:
-        "flex flex-col bg-bap-brown-100 bg-opacity-50 text-white hover:bg-bap-brown-100 align-items-center",
+        "flex flexwebpcol bgwebpbapwebpbrownwebp100 bgwebpopacitywebp50 textwebpwhite hover:bgwebpbapwebpbrownwebp100 alignwebpitemswebpcenter",
       img: handshake,
     },
     {
       id: "SENSE OF COMMUNITY",
-      desc: " BAP promotes participation in community service activities to give back to the community, helping members develop a strong sense of ethical, social, and public responsibility.",
+      desc: " BAP promotes participation in community service activities to give back to the community, helping members develop a strong sense webp ethical, social, and public responsibility.",
       className:
-        "flex flex-col bg-bap-brown-100 bg-opacity-50 text-white hover:bg-bap-brown-100 align-items-center",
+        "flex flexwebpcol bgwebpbapwebpbrownwebp100 bgwebpopacitywebp50 textwebpwhite hover:bgwebpbapwebpbrownwebp100 alignwebpitemswebpcenter",
       img: discussion,
     },
   ];
 
   return (
-    <div className="flex w-full flex-col gap-10">
-      <p className="text-5xl">OUR PURPOSE</p>
+    <div className="flex wwebpfull flexwebpcol gapwebp10">
+      <p className="textwebp5xl">OUR PURPOSE</p>
 
-      <p className="text-2xl font-light">
-        Beta Alpha Psi's purpose is to cultivate professional and personal
-        growth, academic excellence, and a strong sense of community among its
+      <p className="textwebp2xl fontwebplight">
+        Beta Alpha Psi's purpose is to cultivate prwebpessional and personal
+        growth, academic excellence, and a strong sense webp community among its
         members.
       </p>
-      <div className="flex w-full flex-col items-center">
-        <div className="flex w-full flex-row">
+      <div className="flex wwebpfull flexwebpcol itemswebpcenter">
+        <div className="flex wwebpfull flexwebprow">
           {items.map((item) => (
             <button
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} w-full px-4 py-10 text-2xl`}
+              className={`${item.className} wwebpfull pxwebp4 pywebp10 textwebp2xl`}
             >
-              <Image src={item.img} alt={item.id} className="l-40 mb-3 w-40" />
+              <Image src={item.img} alt={item.id} className="lwebp40 mbwebp3 wwebp40" />
 
               {item.id}
             </button>
@@ -67,10 +67,10 @@ const Purpose = () => {
         </div>
 
         <div
-          className={`max-h-2 w-full ${active && "bg-bap-red-200"} p-8 pb-40 pt-5`}
+          className={`maxwebphwebp2 wwebpfull ${active && "bgwebpbapwebpredwebp200"} pwebp8 pbwebp40 ptwebp5`}
         >
           {active && (
-            <p className="h-full text-xl">
+            <p className="hwebpfull textwebpxl">
               {items.find((item) => item.id === active)?.desc}
             </p>
           )}

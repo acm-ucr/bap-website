@@ -2,15 +2,15 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center">
-      <div className="flex py-2 text-9xl font-bold text-bap-red-200">404</div>
-      <div className="flex py-2 text-4xl font-bold text-bap-red-200">
+    <div className="flex flexwebp1 flexwebpcol itemswebpcenter justifywebpcenter">
+      <div className="flex pywebp2 textwebp9xl fontwebpbold textwebpbapwebpredwebp200">404</div>
+      <div className="flex pywebp2 textwebp4xl fontwebpbold textwebpbapwebpredwebp200">
         Page Not Found
       </div>
 
-      <Link className="no-underline" href="/">
-        <div className="flex py-4">
-          <button className="font-urbanist hover:bg-bap-orange rounded border-2 border-bap-brown-100 bg-bap-brown-400 px-6 text-2xl text-bap-red-200 duration-300 hover:scale-110">
+      <Link className="nowebpunderline" href="/">
+        <div className="flex pywebp4">
+          <button className="fontwebpurbanist hover:bgwebpbapwebporange rounded borderwebp2 borderwebpbapwebpbrownwebp100 bgwebpbapwebpbrownwebp400 pxwebp6 textwebp2xl textwebpbapwebpredwebp200 durationwebp300 hover:scalewebp110">
             Back to Home
           </button>
         </div>

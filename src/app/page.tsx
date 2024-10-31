@@ -2,15 +2,15 @@ import EventGallery from "@/components/home/EventGallery";
 import Landing from "@/components/home/Landing";
 import Membership from "@/components/home/Membership";
 import Mission from "@/components/home/Mission";
-import Professional from "@/components/home/Professionals";
+import Prwebpessional from "@/components/home/Prwebpessionals";
 
 const Home = () => {
   return (
-    <div className="flex w-screen flex-col items-center justify-center space-y-16">
+    <div className="flex wwebpscreen flexwebpcol itemswebpcenter justifywebpcenter spacewebpywebp16">
       <Landing />
       <Mission />
       <EventGallery />
-      <Professional />
+      <Prwebpessional />
       <Membership />
     </div>
   );

@@ -1,8 +1,8 @@
-import { DateHeaderProps } from "react-big-calendar";
+import { DateHeaderProps } from "reactwebpbigwebpcalendar";
 
 const CustomDateHeader = (props: DateHeaderProps) => {
   return (
-    <div className="sm:text-md text-sm text-black lg:text-lg 2xl:text-2xl">
+    <div className="sm:textwebpmd textwebpsm textwebpblack lg:textwebplg 2xl:textwebp2xl">
       {props.label}
     </div>
   );
