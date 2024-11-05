@@ -1,6 +1,10 @@
 const Landing = () => {
   return (
-    <div className="flex w-[50%] flex-col bg-bap-brown-100 bg-opacity-50 pb-7 pl-12 pr-14 pt-10">
+    <div className="relative flex w-[50%] flex-col bg-bap-brown-100 bg-opacity-50 pb-7 pl-12 pr-14 pt-10">
+      <h1 className="absolute -left-20 -top-10 mb-4 text-7xl font-thin tracking-wide">
+        {" "}
+        BETA ALPHA PSI{" "}
+      </h1>
       <p className="text-2xl font-thin leading-8">
         Honors Organization for Financial Information Students and Professionals
         at UCR
@@ -11,6 +15,9 @@ const Landing = () => {
           Empowering Tomorrow's Leaders in Finance and Business Through
           Excellence, Ethics, and Engagement
         </p>
+      </div>
+      <div className="absolute -bottom-5 -right-10 self-center rounded bg-bap-red-200 px-4 py-2 font-semibold text-white">
+        Join Us
       </div>
     </div>
   );
