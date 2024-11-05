@@ -43,7 +43,7 @@ const Purpose = () => {
   ];
 
   return (
-    <div className="flex w-10/12 flex-col gap-10 p-20">
+    <div className="flex w-full flex-col gap-10">
       <p className="text-5xl">OUR PURPOSE</p>
 
       <p className="text-2xl font-light">
@@ -51,9 +51,9 @@ const Purpose = () => {
         growth, academic excellence, and a strong sense of community among its
         members.
       </p>
-
       <div className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full">
         <div className="flex w-full flex-wrap justify-center">
+
           {items.map((item) => (
             <button
               key={item.id}
