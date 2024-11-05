@@ -1,6 +1,6 @@
 const MembershipParagraph = () => {
   return (
-    <div className="flex-col w-[92%] justify-start bg-opacity-70 pb-3">
+    <div className="w-[92%] flex-col justify-start bg-opacity-70 pb-3">
       <p className="">
         A paid membership includes access to exclusive events with firms,
         special resources, and discounted tickets to the Spring Banquet and Meet
