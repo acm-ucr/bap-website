@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <div className="flex w-screen flex-col items-center justify-center">
       <Landing />
+      <div className="m-20" />
       <Mission />
       <EventGallery />
       <Membership />
