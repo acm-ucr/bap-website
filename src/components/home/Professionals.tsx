@@ -13,8 +13,8 @@ const Professional = () => {
         </p>
       </div>
 
-      <div className="mt-4 flex justify-center space-x-4">
-        <div className="flex flex-row">
+      <div className="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="flex justify-center">
           <div className="mt-3 h-[60px] w-[273px]">
             <Image
               alt="Bakertilly"
@@ -22,15 +22,21 @@ const Professional = () => {
               className="h-full w-full"
             />
           </div>
+        </div>
 
+        <div className="flex justify-center">
           <div className="h-[100px] w-[191px]">
             <Image alt="RSM" src={RSM} />
           </div>
+        </div>
 
+        <div className="flex justify-center">
           <div className="h-[120px] w-[229px]">
             <Image alt="HCVT" src={HCVT} />
           </div>
+        </div>
 
+        <div className="flex justify-center">
           <div className="h-[90px] w-[117px]">
             <Image alt="PWC" src={PWC} />
           </div>

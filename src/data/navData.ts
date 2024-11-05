@@ -1,6 +1,10 @@
 interface data {
   name: string;
   link?: string;
+  sub?: {
+    name: string;
+    link: string;
+  }[];
 }
 
 export const navData: data[] = [
@@ -22,5 +26,11 @@ export const navData: data[] = [
   },
   {
     name: "Resources",
+    sub: [
+      { name: "Resume", link: "/resources/resume" },
+      { name: "Cover Letter", link: "/resources/cover" },
+      { name: "Interviewing", link: "/resources/interview" },
+      { name: "Professionalism", link: "/resources/prof" },
+    ],
   },
 ];
