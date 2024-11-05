@@ -30,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps) {
       >
         <ReactQueryClientProvider>
           <Navigation />
-          <div className="pt-32"></div>
+          <div className="pt-4"></div>
           <div>{children}</div>
           <Footer />
         </ReactQueryClientProvider>

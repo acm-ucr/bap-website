@@ -1,6 +1,6 @@
 const DropDownContent = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 bg-bap-brown-100 bg-opacity-40 pb-4 pl-12 pr-8 pt-4">
+    <div className="grid grid-cols-3 justify-center gap-4 bg-bap-brown-100 bg-opacity-40 py-4 text-center">
       <div>
         <p className="font-bold"> Faculty Advisor </p>
         <p> Professor John Doe </p>{" "}
