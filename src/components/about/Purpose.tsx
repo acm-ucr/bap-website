@@ -51,26 +51,28 @@ const Purpose = () => {
         growth, academic excellence, and a strong sense of community among its
         members.
       </p>
-      <div className="flex w-full flex-col items-center">
-        <div className="flex w-full flex-row">
+      <div className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full">
+        <div className="flex w-full flex-wrap justify-center">
           {items.map((item) => (
             <button
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} w-full px-4 py-10 text-2xl`}
+              className={`${item.className} h-auto w-full px-7 py-10 md:w-1/4 md:text-lg lg:text-2xl`}
             >
-              <Image src={item.img} alt={item.id} className="l-40 mb-3 w-40" />
+              <Image
+                src={item.img}
+                alt={item.id}
+                className="mb-3 h-auto w-full sm:w-36 md:w-40"
+              />
 
               {item.id}
             </button>
           ))}
         </div>
 
-        <div
-          className={`max-h-2 w-full ${active && "bg-bap-red-200"} p-8 pb-40 pt-5`}
-        >
+        <div className="flex w-full">
           {active && (
-            <p className="h-full text-xl">
+            <p className="bg-bap-red-200 p-8 text-base sm:text-base md:p-16 md:text-xl">
               {items.find((item) => item.id === active)?.desc}
             </p>
           )}
