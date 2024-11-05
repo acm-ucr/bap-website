@@ -53,7 +53,6 @@ const Purpose = () => {
       </p>
       <div className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full">
         <div className="flex w-full flex-wrap justify-center">
-
           {items.map((item) => (
             <button
               key={item.id}
