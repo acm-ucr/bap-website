@@ -26,9 +26,27 @@ const Footer = () => {
             <p>betaalphapsi@gmail.com</p>
           </Link>
           <div className="flex flex-row justify-end gap-3 text-lg sm:text-2xl md:text-3xl">
-            <FaInstagram />
-            <RxDiscordLogo />
-            <FaLinkedin />
+            <Link
+              href="https://www.instagram.com/ucrbap/?hl=en"
+              target="_blank"
+              className="hover:text-gray-200"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              href="https://discord.gg/3P7y6sTgFB"
+              target="_blank"
+              className="hover:text-gray-200"
+            >
+              <RxDiscordLogo />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/ucr-beta-alpha-psi/"
+              target="_blank"
+              className="hover:text-gray-200"
+            >
+              <FaLinkedin />
+            </Link>
           </div>
         </div>
       </div>
