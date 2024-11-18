@@ -29,10 +29,14 @@ export default function RootLayout({ children }: LayoutProps) {
         className={`${opensans.className} flex min-h-screen flex-col bg-bap-brown-400 text-white`}
       >
         <ReactQueryClientProvider>
-          <Navigation />
-          <div className="pt-4"></div>
-          <div>{children}</div>
-          <Footer />
+          <div className="flex min-h-screen flex-col justify-between">
+            <div className="flex flex-col">
+              <Navigation />
+              <div className="pt-4"></div>
+              <div>{children}</div>
+            </div>
+            <Footer />
+          </div>
         </ReactQueryClientProvider>
       </body>
     </html>
