@@ -33,7 +33,7 @@ const EventGallery = () => {
             onClick={prevImage}
           />
         </div>
-        <div className="flex h-[700px] place-items-center overflow-clip">
+        <div className="flex place-items-center overflow-clip">
           <Image
             src={images[currentImageIndex]}
             alt="club image"
