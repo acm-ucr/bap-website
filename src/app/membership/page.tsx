@@ -4,7 +4,7 @@ import MembershipParagraph from "@/components/membership/MembershipParagraph";
 
 const Membership = () => {
   return (
-    <div className="flex w-screen flex-col items-center">
+    <div className="mb-10 flex w-screen flex-col items-center">
       <div className="w-11/12 flex-col justify-start space-y-8">
         <Title title="MEMBERSHIP" />
         <MembershipParagraph />
