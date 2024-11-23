@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcssAnimated from "tailwindcss-animated";
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -13,5 +15,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindcssAnimated],
 };
