@@ -6,7 +6,7 @@ const Mission = () => {
     <div className="relative">
       <Image src={bap} alt="Club Image" />
 
-      <div className="absolute left-0 top-[-5%] max-w-lg bg-[#a12424] px-10 pb-20 pt-10 text-center rounded-sm shadow-3xl">
+      <div className="absolute left-0 top-[-5%] max-w-lg rounded-sm bg-[#a12424] px-10 pb-20 pt-10 text-center shadow-3xl">
         <h1 className="mb-6 text-4xl font-thin text-white">
           MISSION STATEMENT
         </h1>

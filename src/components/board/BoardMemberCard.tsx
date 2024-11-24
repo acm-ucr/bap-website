@@ -4,18 +4,21 @@ import Image, { StaticImageData } from "next/image";
 type Props = {
   title: string;
   name: string;
-  image: StaticImageData
+  image: StaticImageData;
 };
 
 const BoardMemberCard: React.FC<Props> = ({ title, name, image }) => {
   return (
-    <div className="rounded border-none p-3 bg-bap-brown-100 bg-opacity-40 text-center text-white flex 
-      flex-col justify-center items-center">
-      <div className="h-full w-full z-0 flex flex-col place-items-center">
+    <div className="flex flex-col items-center justify-center rounded border-none bg-bap-brown-100 bg-opacity-40 p-3 text-center text-white">
+      <div className="z-0 flex h-full w-full flex-col place-items-center">
         <div className="h-3/4 w-full place-items-center">
-          <Image src={image} alt="boardPic" className=" h-full aspect-square object-cover z-0 rounded"/>
+          <Image
+            src={image}
+            alt="boardPic"
+            className="z-0 aspect-square h-full rounded object-cover"
+          />
         </div>
-        <div className=" bg-bap-red-200 rounded -mt-4 shadow-3xl z-10 p-3 w-[85%]">
+        <div className="z-10 -mt-4 w-[85%] rounded bg-bap-red-200 p-3 shadow-3xl">
           <p className="font-bold">{title}</p>
           <p>{name}</p>
         </div>

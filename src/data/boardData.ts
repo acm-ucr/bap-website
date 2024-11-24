@@ -1,14 +1,14 @@
-import daniel from "@/public/danielAlmendarezFacultyAdvisor.webp"
-import alison from "@/public/alisonWuPresident.webp"
-import anna from "@/public/annaWuVpOfMarketing.webp"
-import chris from "@/public/chrisAmaroVpOfMembership.webp"
-import rachel from "@/public/rachaelChenVpOfCorrespondence.webp"
-import ivan from "@/public/ivanChenVpOfFinance.webp"
-import jacqueline from "@/public/jacquelineCejaVpOfExternalAffairs.webp"
-import matthew from "@/public/matthewLamVpOfInternalAffairs.webp"
-import tanya from "@/public/tanyaTangExecutiveVicePresident.webp"
-import kylie from "@/public/kylieFungSeniorAdvisor.webp"
-import { StaticImageData } from "next/image"
+import daniel from "@/public/danielAlmendarezFacultyAdvisor.webp";
+import alison from "@/public/alisonWuPresident.webp";
+import anna from "@/public/annaWuVpOfMarketing.webp";
+import chris from "@/public/chrisAmaroVpOfMembership.webp";
+import rachel from "@/public/rachaelChenVpOfCorrespondence.webp";
+import ivan from "@/public/ivanChenVpOfFinance.webp";
+import jacqueline from "@/public/jacquelineCejaVpOfExternalAffairs.webp";
+import matthew from "@/public/matthewLamVpOfInternalAffairs.webp";
+import tanya from "@/public/tanyaTangExecutiveVicePresident.webp";
+import kylie from "@/public/kylieFungSeniorAdvisor.webp";
+import { StaticImageData } from "next/image";
 
 export type BOARDTYPE = {
   name: string;
