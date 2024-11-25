@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        fadeDown: {
+          "0%": { transform: "translateY(-20px)", opacity: "0" },
+
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+      },
+      animation: {
+        "fade-down": "fadeDown .7s ease-in-out",
+      },
       colors: {
         bap: {
           "brown-100": "#C5C19D",

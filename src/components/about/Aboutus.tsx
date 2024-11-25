@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="mb-8 flex w-full flex-col text-left">
+    <div className="animate-once mb-8 flex w-full animate-fade-down flex-col text-left">
       <h1 className="mb-4 text-3xl font-semibold text-white sm:font-extralight">
         ABOUT US
       </h1>
