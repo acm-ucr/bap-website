@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        "fade-right": "fadeRight 0.5s ease-in-out",
+      },
+      keyframes: {
+        fadeRight: {
+          "0%": { opacity: "0", transform: "translateX(-20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+      },
       colors: {
         bap: {
           "brown-100": "#C5C19D",
