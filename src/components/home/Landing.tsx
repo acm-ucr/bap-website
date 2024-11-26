@@ -6,7 +6,7 @@ const Landing = () => {
       <div className="absolute left-0 top-0 z-[-1] h-[700px] w-full bg-[url('/clubimage1.webp')] bg-center bg-no-repeat">
         <div className="h-[700px] w-full bg-bap-brown-400 bg-opacity-[93%]"></div>
       </div>
-      <div className="relative flex w-[50%] animate-drop-in flex-col bg-bap-brown-100 bg-opacity-50 pb-7 pl-12 pr-14 pt-10">
+      <div className="relative flex w-[50%] animate-fade-down flex-col bg-bap-brown-100 bg-opacity-50 pb-7 pl-12 pr-14 pt-10">
         <h1 className="absolute -left-20 -top-10 mb-4 text-7xl font-thin tracking-wide">
           {" "}
           BETA ALPHA PSI{" "}
