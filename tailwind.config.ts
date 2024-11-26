@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcssAnimated from "tailwindcss-animated";
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "3xl": "0px 8px 20px 8px #1C090A80;",
+      },
       colors: {
         bap: {
           "brown-100": "#C5C19D",
@@ -13,5 +18,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindcssAnimated],
 };
