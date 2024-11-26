@@ -24,7 +24,7 @@ const EventGallery = () => {
   };
 
   return (
-    <div className="flex w-[94%] select-none flex-row items-center justify-center">
+    <div className="flex w-full select-none flex-row items-center justify-center">
       <div className="relative">
         <div className="absolute left-0 top-[50%] aspect-square opacity-80 shadow-lg">
           <SlArrowLeft
