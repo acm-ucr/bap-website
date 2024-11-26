@@ -1,14 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-
-
 import tailwindcssAnimated from "tailwindcss-animated";
-
 
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
-
       keyframes: {
         fadeDown: {
           "0%": { transform: "translateY(-20px)", opacity: "0" },
@@ -18,10 +14,9 @@ module.exports = {
       },
       animation: {
         "fade-down": "fadeDown .7s ease-in-out",
-
+      },
       boxShadow: {
         "3xl": "0px 8px 20px 8px #1C090A80;",
-
       },
       colors: {
         bap: {
