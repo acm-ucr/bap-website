@@ -3,8 +3,8 @@ import bap from "@/public/clubimage2.webp";
 
 const Mission = () => {
   return (
-    <div className="relative">
-      <Image src={bap} alt="Club Image" />
+    <div className="relative w-full">
+      <Image className="w-full" src={bap} alt="Club Image" />
 
       <div className="absolute left-0 top-[-5%] max-w-lg bg-[#a12424] px-10 pb-20 pt-10 text-center">
         <h1 className="mb-6 text-4xl font-thin text-white">
