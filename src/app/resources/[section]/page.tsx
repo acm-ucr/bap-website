@@ -12,7 +12,7 @@ const Page = ({ params }: { params: { section: string } }) => {
   switch (section) {
     case "resume":
       return (
-        <div className="pb-16 pl-14 pr-[10%]">
+        <div className="pb-16 pl-[10%] pr-[10%]">
           <p className="text-left font-sans text-4xl font-extralight text-white underline decoration-bap-red-200 underline-offset-8">
             RESOURCES
           </p>
