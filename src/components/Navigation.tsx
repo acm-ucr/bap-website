@@ -15,7 +15,7 @@ const Navigation = () => {
   // determines if dropdown has been opened; set false at start
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleNavClick = (Path: any) => {
+  const handleNavClick = (Path: string | undefined) => {
     setActivePath(Path);
   };
 
