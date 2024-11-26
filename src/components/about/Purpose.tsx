@@ -43,8 +43,8 @@ const Purpose = () => {
   ];
 
   return (
-    <div className="flex w-full flex-col gap-10">
-      <p className="text-5xl">OUR PURPOSE</p>
+    <div className="flex w-full flex-col gap-8 pb-20">
+      <p className="text-4xl">OUR PURPOSE</p>
 
       <p className="text-2xl font-light">
         Beta Alpha Psi's purpose is to cultivate professional and personal

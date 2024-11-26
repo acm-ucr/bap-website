@@ -12,7 +12,7 @@ const Events = () => {
   ];
 
   return (
-    <div className="flex w-screen flex-col items-center">
+    <div className="mb-10 flex w-screen flex-col items-center">
       <div className="flex w-11/12 justify-start">
         <Title title="UPCOMING EVENTS" />
       </div>

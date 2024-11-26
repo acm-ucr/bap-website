@@ -24,9 +24,9 @@ const EventGallery = () => {
   };
 
   return (
-    <div className="flex w-[94%] select-none flex-row items-center justify-center">
+    <div className="flex w-full select-none flex-row items-center justify-center">
       <div className="relative">
-        <div className="absolute left-0 top-[50%] aspect-square opacity-80 shadow-lg">
+        <div className="absolute left-0 top-[50%] aspect-square opacity-80 shadow-3xl">
           <SlArrowLeft
             size={65}
             className="cursor-pointer bg-red-700 p-2 text-white"
@@ -42,14 +42,14 @@ const EventGallery = () => {
             height={2000}
           />
         </div>
-        <div className="absolute right-0 top-[50%] aspect-square opacity-80 shadow-2xl">
+        <div className="absolute right-0 top-[50%] aspect-square opacity-80 shadow-3xl">
           <SlArrowRight
             size={65}
             className="cursor-pointer bg-red-700 p-2 text-2xl text-white"
             onClick={nextImage}
           />
         </div>
-        <p className="z-1 absolute right-0 top-[-5%] m-0 bg-red-800 p-4 text-3xl shadow-2xl">
+        <p className="z-1 absolute right-0 top-[-5%] m-0 rounded-sm bg-red-800 p-4 text-3xl shadow-3xl">
           EVENT GALLERY
         </p>
       </div>
