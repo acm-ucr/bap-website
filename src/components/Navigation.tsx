@@ -15,7 +15,7 @@ const Navigation = () => {
   // determines if dropdown has been opened; set false at start
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleNavClick = (Path) => {
+  const handleNavClick = (Path: any) => {
     setActivePath(Path);
   };
 
@@ -54,12 +54,18 @@ const Navigation = () => {
                 as={Link}
                 key={index}
                 href={item.link}
-                className={`text-white ${
-                  activePath === item.link ? "bg-gray-700" : ""
-                } transition duration-300 hover:text-gray-700`}
+                className={`text-white transition duration-300 hover:text-gray-700`}
                 onClick={() => handleNavClick(item.link)}
               >
-                <div className="font-light">{item.name}</div>
+                <div
+                  className={`font-light ${
+                    activePath === item.link
+                      ? "underline underline-offset-8"
+                      : ""
+                  }`}
+                >
+                  {item.name}
+                </div>
               </Nav.Link>
             ) : (
               // Resources Drop down
