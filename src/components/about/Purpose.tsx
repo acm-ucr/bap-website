@@ -43,8 +43,8 @@ const Purpose = () => {
   ];
 
   return (
-    <div className="flex w-full flex-col gap-10">
-      <p className="text-5xl">OUR PURPOSE</p>
+    <div className="flex w-full flex-col gap-8 pb-20">
+      <p className="text-4xl">OUR PURPOSE</p>
 
       <p className="text-2xl font-light">
         Beta Alpha Psi's purpose is to cultivate professional and personal
@@ -53,11 +53,12 @@ const Purpose = () => {
       </p>
       <div className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full">
         <div className="flex w-full flex-wrap justify-center">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <button
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} h-auto w-full px-7 py-10 md:w-1/4 md:text-lg lg:text-2xl`}
+              className={`${item.className} h-auto w-full animate-fade-right px-7 py-10 animate-once md:w-1/4 md:text-lg lg:text-2xl`}
+              style={{ animationDelay: `${index * 130}ms` }}
             >
               <Image
                 src={item.img}
