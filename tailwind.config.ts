@@ -11,9 +11,14 @@ module.exports = {
 
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
+        fadeRight: {
+          "0%": { opacity: "0", transform: "translateX(-20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         "fade-down": "fadeDown .7s ease-in-out",
+        "fade-right": "fadeRight 0.5s ease-in-out",
       },
       boxShadow: {
         "3xl": "0px 8px 20px 8px #1C090A80;",
