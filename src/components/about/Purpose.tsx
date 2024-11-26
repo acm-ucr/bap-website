@@ -57,7 +57,7 @@ const Purpose = () => {
             <button
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} animate-once h-auto w-full animate-fade-right px-7 py-10 md:w-1/4 md:text-lg lg:text-2xl`}
+              className={`${item.className} h-auto w-full animate-fade-right px-7 py-10 animate-once md:w-1/4 md:text-lg lg:text-2xl`}
               style={{ animationDelay: `${index * 130}ms` }}
             >
               <Image
