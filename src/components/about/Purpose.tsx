@@ -12,7 +12,7 @@ const Purpose = () => {
 
   const useView = (offset = 0) => {
     const [inView, setInView] = useState(false);
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement | null>(null);
     const onScroll = () => {
       if (!ref.current) {
         setInView(false);
