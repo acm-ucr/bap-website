@@ -43,8 +43,11 @@ const Navigation = () => {
       className="w-full items-center justify-between pt-4"
     >
       <Navbar.Brand className="pl-8">
-        <Link className="flex items-center space-x-4 no-underline" href="/"
-        onClick = {handleBAPClick}>
+        <Link
+          className="flex items-center space-x-4 no-underline"
+          href="/"
+          onClick={handleBAPClick}
+        >
           <Image className="w-20" src={logo} alt="Beta Alpha Psi Logo" />
           <div className="xl:text-5x text-4xl font-normal text-white">
             BETA ALPHA PSI
@@ -89,11 +92,13 @@ const Navigation = () => {
                     className="flex items-center pl-2 pr-2 text-white hover:bg-gray-700"
                     onClick={toggleDropdown}
                   >
-                    <div className={`font-light ${
-                    isResourcesActive
-                      ? "underline underline-offset-8"
-                      : ""
-                    }`}>{item.name}</div>
+                    <div
+                      className={`font-light ${
+                        isResourcesActive ? "underline underline-offset-8" : ""
+                      }`}
+                    >
+                      {item.name}
+                    </div>
                     <style>
                       {`
                           .dropdown-toggle:after {
@@ -126,7 +131,7 @@ const Navigation = () => {
                         as={Link}
                         key={index}
                         href={page.link}
-                        onClick={ () => {
+                        onClick={() => {
                           toggleDropdown();
                           handleResourceClick(page.link);
                         }}
