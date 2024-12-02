@@ -49,7 +49,7 @@ const EventGallery = () => {
             onClick={nextImage}
           />
         </div>
-        <p className="z-1 absolute right-0 top-[-5%] m-0 rounded-sm bg-red-800 p-4 text-3xl shadow-3xl">
+        <p className="z-1 absolute right-0 top-[-5%] m-0 rounded-sm bg-red-800 p-4 text-3xl shadow-5xl">
           EVENT GALLERY
         </p>
       </div>
