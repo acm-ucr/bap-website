@@ -5,10 +5,33 @@ import thinking from "@/public/thinking.webp";
 import handshake from "@/public/handshake.webp";
 import discussion from "@/public/discussion.webp";
 
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const Purpose = () => {
   const [active, setActive] = useState<string | null>(null);
+
+  const useView = (offset = 0) => {
+    const [inView, setInView] = useState(false);
+    const ref = useRef(null);
+    const onScroll = () => {
+      if (!ref.current) {
+        setInView(false);
+        return;
+      }
+      setInView(
+        ref.current.getBoundingClientRect().top + offset <=
+          window.innerHeight &&
+          ref.current.getBoundingClientRect().bottom - offset >= 0,
+      );
+    };
+    useEffect(() => {
+      document.addEventListener("scroll", onScroll, true);
+      return () => document.removeEventListener("scroll", onScroll, true);
+    }, []);
+    return [inView, ref];
+  };
+
+  const [inView, ref] = useView();
   console.log("current state", active);
 
   const items = [
@@ -55,9 +78,10 @@ const Purpose = () => {
         <div className="flex w-full flex-wrap justify-center">
           {items.map((item, index) => (
             <button
+              ref={ref}
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} h-auto w-full animate-fade-right px-7 py-10 animate-once md:w-1/4 md:text-lg lg:text-2xl`}
+              className={`${item.className} ${inView && "animate-fade-right animate-once"} h-auto w-full px-7 py-10 md:w-1/4 md:text-lg lg:text-2xl`}
               style={{ animationDelay: `${index * 130}ms` }}
             >
               <Image
