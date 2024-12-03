@@ -1,5 +1,4 @@
 import Board from "@/components/board/Board";
-import PrevBoard from "@/components/board/PrevBoard";
 import Title from "@/components/Title";
 const Boards = () => {
   return (
@@ -8,7 +7,6 @@ const Boards = () => {
         <Title title="MEET THE TEAM" />
       </div>
       <Board />
-      <PrevBoard />
     </div>
   );
 };
