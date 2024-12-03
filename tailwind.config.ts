@@ -21,6 +21,7 @@ module.exports = {
       },
       boxShadow: {
         "3xl": "0px 8px 20px 8px #1C090A80;",
+        "5xl": "0px 10px 50px 30px #1C090AFC;",
       },
       colors: {
         bap: {
