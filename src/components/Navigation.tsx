@@ -89,7 +89,7 @@ const Navigation = () => {
                 key={index}
                 title={
                   <div
-                    className="flex items-center pl-2 pr-2 text-white hover:bg-gray-700"
+                    className="flex items-center pl-2 pr-2 text-white"
                     onClick={toggleDropdown}
                   >
                     <div
