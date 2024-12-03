@@ -19,7 +19,7 @@ const AboutUs = () => {
         <div className="relative bg-gradient-to-l from-transparent to-red-950 lg:w-1/2">
           <Image
             src={bap}
-            className="max-w-md lg:w-full lg:max-w-full"
+            className="max-w-full md:max-w-md lg:w-full lg:max-w-full"
             alt="image"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent from-60% to-bap-brown-400 to-100%"></div>
