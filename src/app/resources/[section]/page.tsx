@@ -12,7 +12,7 @@ const Page = ({ params }: { params: { section: string } }) => {
   switch (section) {
     case "resume":
       return (
-        <div className="pb-16 pl-[10%] pr-[10%]">
+        <div className="pb-16 pl-[5%] pr-[5%]">
           <p className="text-left font-sans text-4xl font-extralight text-white underline decoration-bap-red-200 underline-offset-8">
             RESOURCES
           </p>
@@ -68,7 +68,7 @@ const Page = ({ params }: { params: { section: string } }) => {
 
     case "cover":
       return (
-        <div className="max-w-7xl pb-10 pl-14">
+        <div className="pb-16 pl-[5%] pr-[5%]">
           <p className="text-left font-sans text-4xl font-extralight text-white underline decoration-bap-red-200 underline-offset-8">
             RESOURCES
           </p>
@@ -111,7 +111,7 @@ const Page = ({ params }: { params: { section: string } }) => {
 
     case "interview":
       return (
-        <div className="max-w-7xl pb-10 pl-14">
+        <div className="pb-16 pl-[5%] pr-[5%]">
           <p className="text-left font-sans text-4xl font-extralight text-white underline decoration-bap-red-200 underline-offset-8">
             RESOURCES
           </p>
@@ -166,7 +166,7 @@ const Page = ({ params }: { params: { section: string } }) => {
 
     case "prof":
       return (
-        <div className="max-w-7xl pb-10 pl-14">
+        <div className="pb-16 pl-[5%] pr-[5%]">
           <p className="text-left font-sans text-4xl font-extralight text-white underline decoration-bap-red-200 underline-offset-8">
             RESOURCES
           </p>

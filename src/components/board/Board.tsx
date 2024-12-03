@@ -6,7 +6,7 @@ const Board = () => {
   return (
     <div className="mt-10 w-[85%]">
       <p className="mb-8 text-3xl">2024-2025 EXECUTIVE BOARD</p>
-      <div className="grid grid-cols-5 gap-x-10 gap-y-10">
+      <div className="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {BOARDDATA.map((member, index) => {
           return (
             <BoardMemberCard
