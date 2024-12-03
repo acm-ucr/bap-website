@@ -9,29 +9,31 @@ import { useRef, useState, useEffect } from "react";
 
 const Purpose = () => {
   const [active, setActive] = useState<string | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const useView = (offset = 0) => {
-    const [inView, setInView] = useState(false);
-    const ref = useRef<HTMLDivElement | null>(null);
-    const onScroll = () => {
-      if (!ref.current) {
-        setInView(false);
-        return;
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }, // Trigger when 20% of the section is in view
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
       }
-      setInView(
-        ref.current.getBoundingClientRect().top + offset <=
-          window.innerHeight &&
-          ref.current.getBoundingClientRect().bottom - offset >= 0,
-      );
     };
-    useEffect(() => {
-      document.addEventListener("scroll", onScroll, true);
-      return () => document.removeEventListener("scroll", onScroll, true);
-    }, []);
-    return [inView, ref];
-  };
+  }, []);
 
-  const [inView, ref] = useView();
   console.log("current state", active);
 
   const items = [
@@ -74,14 +76,16 @@ const Purpose = () => {
         growth, academic excellence, and a strong sense of community among its
         members.
       </p>
-      <div className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full">
+      <div
+        className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full"
+        ref={sectionRef}
+      >
         <div className="flex w-full flex-wrap justify-center">
           {items.map((item, index) => (
             <button
-              ref={ref}
               key={item.id}
               onClick={() => setActive(item.id)}
-              className={`${item.className} ${inView && "animate-fade-right animate-once"} h-auto w-full px-7 py-10 md:w-1/4 md:text-lg lg:text-2xl`}
+              className={`${item.className} ${isVisible ? "animate-fade-right" : "opacity-0"} h-auto w-full px-7 py-10 md:w-1/4 md:text-lg lg:text-2xl`}
               style={{ animationDelay: `${index * 130}ms` }}
             >
               <Image
