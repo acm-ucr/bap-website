@@ -52,7 +52,7 @@ const Purpose = () => {
         members.
       </p>
       <div className="md:max-w-8xl max-w-full flex-col items-center md:flex md:w-full">
-        <div className="flex w-full flex-wrap justify-center">
+        <div className="grid w-full grid-cols-2 flex-wrap justify-center md:flex">
           {items.map((item, index) => (
             <button
               key={item.id}
@@ -63,7 +63,7 @@ const Purpose = () => {
               <Image
                 src={item.img}
                 alt={item.id}
-                className="mb-3 h-auto w-full sm:w-36 md:w-40"
+                className="mb-3 h-auto w-[50%] sm:w-36 md:w-40"
               />
 
               {item.id}
