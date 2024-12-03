@@ -1,5 +1,6 @@
 import BoardMemberCard from "./BoardMemberCard";
 import { BOARDDATA } from "@/data/boardData";
+import PrevBoard from "./PrevBoard";
 
 const Board = () => {
   return (
@@ -17,6 +18,7 @@ const Board = () => {
           );
         })}
       </div>
+      <PrevBoard />
     </div>
   );
 };
