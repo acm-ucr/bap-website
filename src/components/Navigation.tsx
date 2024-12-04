@@ -42,14 +42,18 @@ const Navigation = () => {
       expand="lg"
       className="w-full items-center justify-between pt-4"
     >
-      <Navbar.Brand className="pl-8">
+      <Navbar.Brand className="pl-4 sm:pl-8">
         <Link
           className="flex items-center space-x-4 no-underline"
           href="/"
           onClick={handleBAPClick}
         >
-          <Image className="w-20" src={logo} alt="Beta Alpha Psi Logo" />
-          <div className="xl:text-5x text-4xl font-normal text-white">
+          <Image
+            className="w-10 sm:w-14 lg:w-16 xl:w-20"
+            src={logo}
+            alt="Beta Alpha Psi Logo"
+          />
+          <div className="text-base font-normal text-white sm:text-2xl lg:text-3xl xl:text-4xl">
             BETA ALPHA PSI
           </div>
         </Link>
