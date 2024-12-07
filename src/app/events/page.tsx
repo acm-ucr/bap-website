@@ -7,10 +7,10 @@ import Title from "@/components/Title";
 import { Event } from "react-big-calendar";
 
 interface GoogleEvent {
-  summary: string,
-  start: { dateTime: string },
-  end: { dateTime: string },
-};
+  summary: string;
+  start: { dateTime: string };
+  end: { dateTime: string };
+}
 
 const Events = () => {
   const [events, setEvents] = useState<Event[]>([]);
@@ -35,7 +35,15 @@ const Events = () => {
       )
       .then((result) => {
         console.log(result);
-        setEvents(result.data.items.map((item: GoogleEvent): Event => ({start: new Date(item.start.dateTime), end: new Date(item.end.dateTime), title: item.summary})));
+        setEvents(
+          result.data.items.map(
+            (item: GoogleEvent): Event => ({
+              start: new Date(item.start.dateTime),
+              end: new Date(item.end.dateTime),
+              title: item.summary,
+            }),
+          ),
+        );
       });
   }, []);
 
