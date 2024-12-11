@@ -11,16 +11,15 @@ const PrevBoard = () => {
   };
 
   return (
-    <div className="w-full">
-      <div
-        className="w-full flex-col place-items-center justify-center"
-        id="2022"
-      >
-        <div className="flex w-1/2 flex-col">
+    <div className="flex w-full justify-start">
+      <div className="w-full flex-col" id="2022">
+        <div className="flex w-full flex-col">
           <button onClick={handleOpen} className="flex w-1/2">
-            <div className="my-3 flex flex-row items-center gap-2 text-2xl">
+            <div className="my-4 flex flex-row items-center gap-2 text-2xl">
               {open ? <SlArrowDown /> : <SlArrowRight />}
-              <p>2023-2024 BOARD</p>
+              <div className="text-3xl">
+                <p>2023-2024 BOARD</p>
+              </div>
             </div>
           </button>
           {open && <DropdownContent />}
