@@ -2,30 +2,56 @@
 import DropdownContent from "./DropdownContent";
 import { SlArrowRight, SlArrowDown } from "react-icons/sl";
 import { useState } from "react";
+import { PREVBOARDDATA, PREVBOARDTYPE } from "@/data/prevBoardData";
 
 const PrevBoard = () => {
-  const [open, setOpen] = useState(false);
+  const [openData, setOpen] = useState<PREVBOARDTYPE[] | []>(PREVBOARDDATA);
 
-  const handleOpen = () => {
-    setOpen(!open);
+  const handleOpen = (id: string) => {
+    // console.log(openData);
+    const newOpen = openData.map((board) => {
+      if (board.year == id) {
+        return {
+          year: board.year,
+          open: !board.open,
+          members: board.members,
+        };
+      } else {
+        return {
+          year: board.year,
+          open: board.open,
+          members: board.members,
+        };
+      }
+    });
+    setOpen(newOpen);
   };
 
   return (
-    <div className="w-full">
-      <div
-        className="w-full flex-col place-items-center justify-center"
-        id="2022"
-      >
-        <div className="flex w-1/2 flex-col">
-          <button onClick={handleOpen} className="flex w-1/2">
-            <div className="my-3 flex flex-row items-center gap-2 text-2xl">
-              {open ? <SlArrowDown /> : <SlArrowRight />}
-              <p>2023-2024 BOARD</p>
+    <div className="flex w-full flex-col justify-start">
+      {PREVBOARDDATA.map((board, index) => {
+        return (
+          <div className="w-full flex-col" key={index}>
+            <div className="flex w-full flex-col">
+              <button
+                onClick={(e) => handleOpen(e.currentTarget.id)}
+                className="flex w-full"
+                id={board.year}
+              >
+                <div className="my-4 flex flex-row items-center gap-2 text-2xl">
+                  {openData[index].open ? <SlArrowDown /> : <SlArrowRight />}
+                  <div className="text-3xl">
+                    <p>{board.year} BOARD</p>
+                  </div>
+                </div>
+              </button>
+              {openData[index].open && (
+                <DropdownContent members={board.members} />
+              )}
             </div>
-          </button>
-          {open && <DropdownContent />}
-        </div>
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
