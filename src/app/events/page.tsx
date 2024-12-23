@@ -52,9 +52,9 @@ const Events = () => {
       <div className="flex w-11/12 justify-start">
         <Title title="UPCOMING EVENTS" />
       </div>
-      <EventCard />
-      <EventCard />
-      <EventCard />
+      {events.slice(0, 3).map((event, index) => (
+        <EventCard key={index} event={event} />
+      ))}
       <CustomCalendar events={events} />
     </div>
   );

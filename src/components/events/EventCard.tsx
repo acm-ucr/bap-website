@@ -1,16 +1,21 @@
-const EventCard = () => {
+import { Event } from "react-big-calendar";
+
+interface EventCardProps {
+  event: Event;
+}
+
+const EventCard = ({ event }: EventCardProps) => {
+  console.log(event);
   return (
-    <div className="mx-4 my-10 flex h-[25%] w-[65%] flex-col justify-between rounded-md bg-bap-brown-100 bg-opacity-50 py-7 pl-10 sm:mx-8 md:mx-12 lg:mx-24">
-      <p className="text-3x1 mb-4 w-[70%] sm:text-4xl lg:text-5xl">
-        WEEKLY MEETING
+    <div className="mx-4 my-6 flex h-[25%] w-[65%] flex-col justify-between rounded-md bg-bap-brown-100 bg-opacity-50 py-7 pl-10 sm:mx-8 md:mx-12 lg:mx-24">
+      <p className="text-3x1 w-[70%] sm:text-4xl lg:text-5xl">
+        {event.title?.toLocaleString()}
       </p>
-      <p className="mb-1 w-[80%] text-xl font-semibold text-bap-red-200 sm:text-2xl">
-        August 14th @ 6:00pm - 7:00pm | Location
-      </p>
-      <p className="w-[80%] text-lg sm:text-xl lg:text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      {event.start?.toLocaleString() === "Invalid Date" ? null : (
+        <p className="mb-1 mt-4 w-[80%] rounded-xl bg-bap-red-200 p-1 text-xl font-semibold sm:text-2xl">
+          {event.start?.toLocaleString()}
+        </p>
+      )}
     </div>
   );
 };
