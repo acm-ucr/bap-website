@@ -3,7 +3,7 @@ import Link from "next/link";
 const Landing = () => {
   return (
     <div className="flex w-full items-center justify-center">
-      <div className="absolute left-0 top-0 z-[-1] h-[700px] w-full bg-[url('/clubimage1.webp')] bg-center bg-no-repeat">
+      <div className="absolute left-0 top-0 z-[-1] h-[700px] w-full bg-[url('/clubimage1.webp')] bg-cover bg-center bg-no-repeat">
         <div className="h-[700px] w-full bg-bap-brown-400 bg-opacity-[93%]"></div>
       </div>
       <div className="relative flex w-5/6 animate-fade-down flex-col bg-bap-brown-100 bg-opacity-50 p-4 sm:w-[50%] sm:pb-7 sm:pl-12 sm:pr-14 sm:pt-10">

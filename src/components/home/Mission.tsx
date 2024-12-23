@@ -16,13 +16,13 @@ const Mission = () => {
           fields.
         </p>
       </div>
-      <div>
+      <div className="relative w-full">
         <Image
           className="h-[400px] w-full object-cover md:h-auto"
           src={bap}
           alt="Club Image"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-bap-brown-400 to-100%"></div>
+        <div className="absolute inset-0 bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent from-60% to-bap-brown-400 to-100%"></div>
       </div>
 
       <div className="bottom-[10%] left-1/2 my-[-10%] flex h-[100px] w-[70%] transform items-center justify-center bg-[#b4966f] p-4 text-center text-lg font-semibold text-white shadow-5xl md:absolute md:my-0 md:-translate-x-1/2 md:bg-[#b4966fa4] md:text-3xl md:font-normal md:shadow-none">
