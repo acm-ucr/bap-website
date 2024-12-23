@@ -66,11 +66,11 @@ const EventGallery = () => {
         <div className="absolute right-0 top-[50%] aspect-square opacity-80 shadow-3xl">
           <SlArrowRight
             size={65}
-            className="cursor-pointer bg-red-700 p-2 text-2xl text-white"
+            className="cursor-pointer bg-red-700 p-2 text-sm text-white"
             onClick={nextImage}
           />
         </div>
-        <p className="z-1 absolute right-0 top-[-5%] m-0 rounded-sm bg-red-800 p-4 text-3xl shadow-5xl">
+        <p className="z-1 text-md absolute right-0 top-[-5%] m-0 rounded-sm bg-red-800 p-4 shadow-5xl md:text-3xl">
           EVENT GALLERY
         </p>
       </div>
