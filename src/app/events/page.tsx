@@ -49,9 +49,11 @@ const Events = () => {
 
   return (
     <div className="mb-10 flex w-screen flex-col items-center">
-      <div className="flex w-11/12 justify-start">
-        <Title title="UPCOMING EVENTS" />
-      </div>
+      {events.length > 0 && (
+        <div className="flex w-11/12 justify-start">
+          <Title title="UPCOMING EVENTS" />
+        </div>
+      )}
       {events.slice(0, 3).map((event, index) => (
         <EventCard key={index} event={event} />
       ))}
