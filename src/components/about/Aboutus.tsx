@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="mb-8 flex w-full animate-fade-down flex-col text-left animate-once">
-      <p className="mb-8 text-4xl text-white">ABOUT US</p>
+      <p className="mb-8 text-4xl text-white md:text-4xl">ABOUT US</p>
 
       <div className="flex flex-col gap-4 md:flex-row">
         <p className="text-2xl font-light leading-relaxed lg:w-1/2">
@@ -16,10 +16,10 @@ const AboutUs = () => {
           founded in Winter 2015 under the presidency of Luke Hatch.
         </p>
 
-        <div className="relative bg-gradient-to-l from-transparent to-red-950 lg:w-1/2">
+        <div className="relative lg:w-1/2">
           <Image
             src={bap}
-            className="max-w-md lg:w-full lg:max-w-full"
+            className="max-w-full md:max-w-md lg:w-full lg:max-w-full"
             alt="image"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent from-60% to-bap-brown-400 to-100%"></div>

@@ -14,9 +14,21 @@ const Navigation = () => {
   const [activePath, setActivePath] = useState("");
   // determines if dropdown has been opened; set false at start
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isResourcesActive, setIsResourcesActive] = useState(false);
 
   const handleNavClick = (Path: string) => {
     setActivePath(Path);
+    setIsResourcesActive(false);
+  };
+
+  const handleResourceClick = (Path: string) => {
+    setIsResourcesActive(true);
+    setActivePath(Path);
+  };
+
+  const handleBAPClick = () => {
+    setActivePath("");
+    setIsResourcesActive(false);
   };
 
   // function changes boolean of isDropdownOpen
@@ -30,10 +42,18 @@ const Navigation = () => {
       expand="lg"
       className="w-full items-center justify-between pt-4"
     >
-      <Navbar.Brand className="pl-8">
-        <Link className="flex items-center space-x-4 no-underline" href="/">
-          <Image className="w-20" src={logo} alt="Beta Alpha Psi Logo" />
-          <div className="xl:text-5x text-4xl font-normal text-white">
+      <Navbar.Brand className="pl-4 sm:pl-8">
+        <Link
+          className="flex items-center space-x-2 no-underline md:space-x-4"
+          href="/"
+          onClick={handleBAPClick}
+        >
+          <Image
+            className="w-10 sm:w-14 lg:w-16 xl:w-20"
+            src={logo}
+            alt="Beta Alpha Psi Logo"
+          />
+          <div className="text-base font-normal text-white sm:text-2xl lg:text-3xl xl:text-4xl">
             BETA ALPHA PSI
           </div>
         </Link>
@@ -47,7 +67,7 @@ const Navigation = () => {
       </Navbar.Toggle>
 
       <Navbar.Collapse className="justify-end">
-        <Nav className="items-center justify-between pr-8 text-xl lg:space-x-6 xl:text-2xl">
+        <Nav className="items-center justify-between pr-2 text-xl md:pr-8 lg:space-x-6 xl:text-2xl">
           {navData.map((item, index) =>
             item.link ? (
               <Nav.Link
@@ -73,10 +93,16 @@ const Navigation = () => {
                 key={index}
                 title={
                   <div
-                    className="flex items-center pl-2 pr-2 text-white hover:bg-gray-700"
+                    className="flex items-center pl-2 pr-2 text-white"
                     onClick={toggleDropdown}
                   >
-                    <div className="font-light">{item.name}</div>
+                    <div
+                      className={`font-light ${
+                        isResourcesActive ? "underline underline-offset-8" : ""
+                      }`}
+                    >
+                      {item.name}
+                    </div>
                     <style>
                       {`
                           .dropdown-toggle:after {
@@ -109,7 +135,15 @@ const Navigation = () => {
                         as={Link}
                         key={index}
                         href={page.link}
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          toggleDropdown();
+                          handleResourceClick(page.link);
+                        }}
+                        className={`${
+                          activePath === page.link
+                            ? "underline underline-offset-8"
+                            : ""
+                        }`}
                       >
                         {" " + page.name + " "}
                       </NavDropdown.Item>

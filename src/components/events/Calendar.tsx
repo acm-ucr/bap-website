@@ -18,7 +18,7 @@ const CustomCalendar = ({ events }: Events) => {
   const [date, setDate] = useState<Date>(new Date());
 
   return (
-    <div className="m-4 h-[90vh] w-9/12">
+    <div className="m-4 h-[60vh] w-9/12 sm:h-[70vh] lg:h-[80vh] xl:h-[90vh]">
       <Calendar
         localizer={localizer}
         date={date}

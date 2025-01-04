@@ -19,8 +19,8 @@ const BoardMemberCard: React.FC<Props> = ({ title, name, image }) => {
           />
         </div>
         <div className="z-10 -mt-4 w-[85%] rounded bg-bap-red-200 p-3 shadow-3xl">
-          <p className="font-bold">{title}</p>
-          <p>{name}</p>
+          <p className="text-xs font-bold lg:text-sm xl:text-base">{title}</p>
+          <p className="text-xs lg:text-sm xl:text-base">{name}</p>
         </div>
       </div>
       {/* <div className=" w-full mt-6 mb-3">
