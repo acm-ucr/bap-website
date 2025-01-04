@@ -8,8 +8,8 @@ const Mission = () => {
         <h1 className="mb-2 text-2xl font-thin text-white md:mb-6 md:text-4xl">
           MISSION STATEMENT
         </h1>
-        <p className="text-sm leading-relaxed text-white md:text-lg">
-          It provides opportunities for service, professional development, and
+        <p className="text-lg leading-relaxed text-white">
+          BAP provides opportunities for service, professional development, and
           interaction among its members and financial professionals.
           Additionally, Beta Alpha Psi fosters lifelong ethical, social, and
           public responsibilities, shaping its members into leaders in their
