@@ -94,7 +94,9 @@ const Navigation = () => {
                 className={`text-white transition duration-300 hover:text-gray-700`}
                 onClick={() => handleNavClick("/resources")}
               >
-                <div className={`font-light ${activePath === "/resources" ? "underline underline-offset-8" : ""}`}>
+                <div
+                  className={`font-light ${activePath === "/resources" ? "underline underline-offset-8" : ""}`}
+                >
                   Resources
                 </div>
               </Nav.Link>

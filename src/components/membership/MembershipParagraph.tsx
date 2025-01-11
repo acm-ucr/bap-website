@@ -31,15 +31,19 @@ const MembershipParagraph = () => {
       </p>
       <p className="mt-4 text-xl font-bold">What comes with a membership?</p>
       <p className="text-xl font-light">
-        A paid membership includes access to exclusive events with firms, special resources, and discounted tickets to the Spring Banquet and Meet the Firms events. Membership also comes with the recognition of being part of BAP, a reputable honors society, well-regarded in the financial information industry and by recruiters.
+        A paid membership includes access to exclusive events with firms,
+        special resources, and discounted tickets to the Spring Banquet and Meet
+        the Firms events. Membership also comes with the recognition of being
+        part of BAP, a reputable honors society, well-regarded in the financial
+        information industry and by recruiters.
       </p>
-      <p className="mt-4 text-xl font-bold">Is attending all the events mandatory?</p>
+      <p className="mt-4 text-xl font-bold">
+        Is attending all the events mandatory?
+      </p>
       <p className="text-xl font-light">
-        No, it is not mandatory to attend all the events. However, we highly recommend you attend all to make the most out of your membership.
+        No, it is not mandatory to attend all the events. However, we highly
+        recommend you attend all to make the most out of your membership.
       </p>
-
-      
-
     </div>
   );
 };
