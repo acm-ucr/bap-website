@@ -6,33 +6,16 @@ import Image from "next/image";
 import logo from "@/public/bap.webp";
 import { navData } from "@/data/navData";
 import { Menu } from "lucide-react";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
   const [activePath, setActivePath] = useState("");
-  // determines if dropdown has been opened; set false at start
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isResourcesActive, setIsResourcesActive] = useState(false);
-
   const handleNavClick = (Path: string) => {
-    setActivePath(Path);
-    setIsResourcesActive(false);
-  };
-
-  const handleResourceClick = (Path: string) => {
-    setIsResourcesActive(true);
     setActivePath(Path);
   };
 
   const handleBAPClick = () => {
     setActivePath("");
-    setIsResourcesActive(false);
-  };
-
-  // function changes boolean of isDropdownOpen
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
