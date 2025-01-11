@@ -8,8 +8,8 @@ const Professional = () => {
   return (
     <div>
       <div className="flex justify-center px-6 py-2 font-mono">
-        <p className="w-1/2 bg-bap-brown-100 bg-opacity-40 text-center">
-          FEATURED PROFESSIONALS
+        <p className="w-1/2 bg-bap-brown-100 bg-opacity-40 py-2 text-center text-2xl font-thin">
+          OUR ALUMNIS ARE AT
         </p>
       </div>
 
