@@ -64,6 +64,7 @@ const EventGallery = () => {
             height={2000}
           />
         </div>
+
         <div className="absolute right-0 top-[50%] aspect-square opacity-80 shadow-3xl">
           <SlArrowRight
             size={65}
