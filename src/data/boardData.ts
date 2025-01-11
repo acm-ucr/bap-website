@@ -1,93 +1,83 @@
-import daniel from "@/public/board/danielAlmendarezFacultyAdvisor.webp";
-import alison from "@/public/board/alisonWuPresident.webp";
-import anna from "@/public/board/annaWuVpOfMarketing.webp";
-import chris from "@/public/board/chrisAmaroVpOfMembership.webp";
-import rachel from "@/public/board/rachaelChenVpOfCorrespondence.webp";
-import ivan from "@/public/board/ivanChenVpOfFinance.webp";
-import jacqueline from "@/public/board/jacquelineCejaVpOfExternalAffairs.webp";
-import matthew from "@/public/board/matthewLamVpOfInternalAffairs.webp";
-import tanya from "@/public/board/tanyaTangExecutiveVicePresident.webp";
-import kylie from "@/public/board/kylieFungSeniorAdvisor.webp";
+import daniel from "@/public/board/danielAlmendarez.webp";
+import tanya from "@/public/board/tanyaTang.webp";
+import anna from "@/public/board/annaWu.webp";
+import jack from "@/public/board/jackWebber.webp";
+import lucas from "@/public/board/lucasMoo.webp";
+import merari from "@/public/board/merariZamora.webp";
+import cody from "@/public/board/codyNguyen.webp";
+import amanda from "@/public/board/amandaHsieh.webp";
+import phuong from "@/public/board/phuongHo.webp";
+import isabella from "@/public/board/isabellaWu.webp";
+import allen from "@/public/board/allenLien.webp";
+import andrew from "@/public/board/andrewMartinez.webp";
 import { StaticImageData } from "next/image";
 
 export type BOARDTYPE = {
   name: string;
   img: StaticImageData;
   boardPosition: string;
-  title: string;
-  email: string;
 };
 
 export const BOARDDATA: BOARDTYPE[] = [
   {
     boardPosition: "Faculty Advisor",
     name: "Daniel Almendarez",
-    title: "Department of Business",
-    email: "123@gmail.com",
     img: daniel,
   },
   {
-    boardPosition: "President",
-    name: "Alison Wu",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: alison,
-  },
-  {
-    boardPosition: "Executive Vice President",
+    boardPosition: "Senior Advisor",
     name: "Tanya Tang",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
     img: tanya,
   },
   {
-    boardPosition: "VP of Marketing",
+    boardPosition: "President",
     name: "Anna Wu",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
     img: anna,
   },
   {
+    boardPosition: "Executive Vice President",
+    name: "Jack Webber",
+    img: jack,
+  },
+  {
     boardPosition: "VP of Membership",
-    name: "Chris Amaro",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: chris,
+    name: "Lucas Moo",
+    img: lucas,
   },
   {
     boardPosition: "VP of Correspondence",
-    name: "Rachel Chen",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: rachel,
+    name: "Merari Zamora",
+    img: merari,
   },
   {
     boardPosition: "VP of Finance",
-    name: "Ivan Chen",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: ivan,
+    name: "Cody Nguyen",
+    img: cody,
+  },
+  {
+    boardPosition: "VP of Marketing",
+    name: "Amanda Hsieh",
+    img: amanda,
   },
   {
     boardPosition: "VP of External Affairs",
-    name: "Jacqueline Ceja",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: jacqueline,
+    name: "Phuong Ho",
+    img: phuong,
   },
   {
     boardPosition: "VP of Internal Affairs",
-    name: "Matthew Lam",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: matthew,
+    name: "Isabella Wu",
+    img: isabella,
   },
   {
-    boardPosition: "Senior Advisor",
-    name: "Kylie Fung",
-    title: "4th year - Business Economics",
-    email: "123@gmail.com",
-    img: kylie,
+    boardPosition: "VP of Professional Development",
+    name: "Allen Lien",
+    img: allen,
+  },
+  {
+    boardPosition: "VP of Alumni Relations",
+    name: "Andrew Martinez",
+    img: andrew,
   },
 ];
 
