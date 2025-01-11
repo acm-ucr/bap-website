@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import diploma from "@/public/diploma.webp";
-import thinking from "@/public/thinking.webp";
-import handshake from "@/public/handshake.webp";
-import discussion from "@/public/discussion.webp";
+import diploma from "@/public/icons/diploma.webp";
+import thinking from "@/public/icons/thinking.webp";
+import handshake from "@/public/icons/handshake.webp";
+import discussion from "@/public/icons/discussion.webp";
 
 import { useRef, useState, useEffect } from "react";
 
