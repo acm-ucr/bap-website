@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import clubimage1 from "@/public/gallery/clubimage1.webp";
-
+import clubimage4 from "@/public/gallery/clubimage4.webp";
 import clubimage5 from "@/public/gallery/clubimage5.webp";
 import clubimage6 from "@/public/gallery/clubimage6.webp";
 import clubimage7 from "@/public/gallery/clubimage7.webp";
@@ -17,10 +17,8 @@ import clubimage16 from "@/public/gallery/clubimage16.webp";
 import { useState } from "react";
 
 const images = [
-  clubimage14,
-  clubimage15,
-  clubimage16,
   clubimage1,
+  clubimage4,
   clubimage5,
   clubimage6,
   clubimage7,
@@ -28,6 +26,9 @@ const images = [
   clubimage9,
   clubimage10,
   clubimage13,
+  clubimage14,
+  clubimage15,
+  clubimage16,
 ];
 
 const EventGallery = () => {

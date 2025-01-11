@@ -3,6 +3,9 @@ import Bakertilly from "/public/brands/bakertilly.webp";
 import RSM from "/public/brands/rsm.webp";
 import HCVT from "/public/brands/hcvt.webp";
 import PWC from "/public/brands/pwc.webp";
+import Deloitte from "/public/brands/deloitte.webp";
+import EY from "/public/brands/ey.png";
+import BDO from "/public/brands/bdo.png";
 
 const Professional = () => {
   return (
@@ -39,6 +42,24 @@ const Professional = () => {
         <div className="flex justify-center">
           <div className="h-[90px] w-[117px]">
             <Image alt="PWC" src={PWC} />
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="h-[120px] w-[235px]">
+            <Image alt="Deloitte" src={Deloitte} />
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="-mt-6 h-[90px] w-[90px]">
+            <Image alt="EY" src={EY} />
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="mt-1 h-[120px] w-[140px]">
+            <Image alt="BDO" src={BDO} />
           </div>
         </div>
       </div>
