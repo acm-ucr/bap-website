@@ -1,18 +1,18 @@
 "use client";
 import Image from "next/image";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
-import clubimage1 from "@/public/clubimage1.webp";
+import clubimage1 from "@/public/gallery/clubimage1.webp";
 
-import clubimage5 from "@/public/clubimage5.webp";
-import clubimage6 from "@/public/clubimage6.webp";
-import clubimage7 from "@/public/clubimage7.webp";
-import clubimage8 from "@/public/clubimage8.webp";
-import clubimage9 from "@/public/clubimage9.webp";
-import clubimage10 from "@/public/clubimage10.webp";
-import clubimage13 from "@/public/clubimage13.webp";
-import clubimage14 from "@/public/clubimage14.webp";
-import clubimage15 from "@/public/clubimage15.webp";
-import clubimage16 from "@/public/clubimage16.webp";
+import clubimage5 from "@/public/gallery/clubimage5.webp";
+import clubimage6 from "@/public/gallery/clubimage6.webp";
+import clubimage7 from "@/public/gallery/clubimage7.webp";
+import clubimage8 from "@/public/gallery/clubimage8.webp";
+import clubimage9 from "@/public/gallery/clubimage9.webp";
+import clubimage10 from "@/public/gallery/clubimage10.webp";
+import clubimage13 from "@/public/gallery/clubimage13.webp";
+import clubimage14 from "@/public/gallery/clubimage14.webp";
+import clubimage15 from "@/public/gallery/clubimage15.webp";
+import clubimage16 from "@/public/gallery/clubimage16.webp";
 
 import { useState } from "react";
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bap from "@/public/clubimage2.webp";
+import bap from "@/public/gallery/clubimage2.webp";
 
 const Mission = () => {
   return (

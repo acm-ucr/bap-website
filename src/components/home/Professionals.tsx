@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Bakertilly from "/public/bakertilly.webp";
-import RSM from "/public/rsm.webp";
-import HCVT from "/public/hcvt.webp";
-import PWC from "/public/pwc.webp";
+import Bakertilly from "/public/brands/bakertilly.webp";
+import RSM from "/public/brands/rsm.webp";
+import HCVT from "/public/brands/hcvt.webp";
+import PWC from "/public/brands/pwc.webp";
 
 const Professional = () => {
   return (
