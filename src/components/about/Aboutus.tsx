@@ -1,4 +1,4 @@
-import bap from "@/public/clubimage3.webp";
+import bap from "@/public/gallery/clubimage3.webp";
 import Image from "next/image";
 
 const AboutUs = () => {
