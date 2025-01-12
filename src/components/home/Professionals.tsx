@@ -44,7 +44,8 @@ const Professional = () => {
             <Image alt="PWC" src={PWC} />
           </div>
         </div>
-
+      </div>
+      <div className="mt-4 hidden gap-4 lg:grid lg:grid-cols-3">
         <div className="flex justify-center">
           <div className="h-[120px] w-[235px]">
             <Image alt="Deloitte" src={Deloitte} />
@@ -57,6 +58,26 @@ const Professional = () => {
           </div>
         </div>
 
+        <div className="flex justify-center">
+          <div className="mt-1 h-[120px] w-[140px]">
+            <Image alt="BDO" src={BDO} />
+          </div>
+        </div>
+      </div>
+      <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:hidden">
+        <div className="flex justify-center">
+          <div className="h-[120px] w-[235px]">
+            <Image alt="Deloitte" src={Deloitte} />
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="-mt-6 h-[90px] w-[90px]">
+            <Image alt="EY" src={EY} />
+          </div>
+        </div>
+      </div>
+      <div className="mt-4 grid grid-cols-1 gap-4 lg:hidden">
         <div className="flex justify-center">
           <div className="mt-1 h-[120px] w-[140px]">
             <Image alt="BDO" src={BDO} />
