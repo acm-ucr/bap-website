@@ -47,7 +47,7 @@ export const PREVBOARDDATA: PREVBOARDTYPE[] = [
         name: "Anna Wu",
       },
       {
-        boardPosition: "Vice President of External Relations",
+        boardPosition: "Vice President of External Affairs",
         name: "Jacqueline Ceja",
       },
       {
@@ -67,6 +67,10 @@ export const PREVBOARDDATA: PREVBOARDTYPE[] = [
       {
         boardPosition: "Senior Advisor",
         name: "May Chhur",
+      },
+      {
+        boardPosition: "Senior Advisor",
+        name: "Mandy Tsai",
       },
       {
         boardPosition: "Co-President",
@@ -93,7 +97,7 @@ export const PREVBOARDDATA: PREVBOARDTYPE[] = [
         name: "Ashley Dang",
       },
       {
-        boardPosition: "Vice President of External Relations",
+        boardPosition: "Vice President of External Affairs",
         name: "Wendy Yang",
       },
       {
@@ -143,7 +147,7 @@ export const PREVBOARDDATA: PREVBOARDTYPE[] = [
         name: "Trinh Tran",
       },
       {
-        boardPosition: "Vice President of External Relations",
+        boardPosition: "Vice President of External Affairs",
         name: "Steven Hyunh",
       },
       {
@@ -181,7 +185,7 @@ export const PREVBOARDDATA: PREVBOARDTYPE[] = [
         name: "Johnny Cheng",
       },
       {
-        boardPosition: "Vice President of External Relations",
+        boardPosition: "Vice President of External Affairs",
         name: "Joshua Eng",
       },
       {
