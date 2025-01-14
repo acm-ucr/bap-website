@@ -1,7 +1,7 @@
 "use client";
 
 import { EventProps } from "react-big-calendar";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 const CustomEvent = (props: EventProps) => {
   // const [isOpen, setIsOpen] = useState(false);
