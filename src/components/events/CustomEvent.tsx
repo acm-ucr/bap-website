@@ -4,18 +4,18 @@ import { EventProps } from "react-big-calendar";
 import { useState, useRef } from "react";
 
 const CustomEvent = (props: EventProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     dialogRef.current?.showModal();
-    setIsOpen(true);
+    // setIsOpen(true);
   };
 
   const handleClose = () => {
     dialogRef.current?.close();
-    setIsOpen(false);
+    // setIsOpen(false);
   };
 
   const formatTime = (date: Date | undefined) => {
