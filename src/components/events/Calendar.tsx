@@ -7,6 +7,7 @@ import CustomToolbar from "./CustomToolbar";
 import CustomHeader from "./CustomHeader";
 import CustomDateHeader from "./CustomDateHeader";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import "@/app/calendar.css";
 
 const localizer = momentLocalizer(moment);
 
@@ -18,7 +19,7 @@ const CustomCalendar = ({ events }: Events) => {
   const [date, setDate] = useState<Date>(new Date());
 
   return (
-    <div className="m-4 h-[60vh] w-9/12 sm:h-[70vh] lg:h-[80vh] xl:h-[90vh]">
+    <div className="m-4 w-9/12">
       <Calendar
         localizer={localizer}
         date={date}

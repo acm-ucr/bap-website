@@ -19,10 +19,12 @@ const CustomEvent = (props: EventProps) => {
   };
 
   const formatTime = (date: Date | undefined) => {
-    return date?.toLocaleTimeString(navigator.language, {
-      hour: "numeric",
-      minute: "2-digit",
-    }) || "12 AM";
+    return (
+      date?.toLocaleTimeString(navigator.language, {
+        hour: "numeric",
+        minute: "2-digit",
+      }) || "12 AM"
+    );
   };
 
   return (
@@ -48,11 +50,9 @@ const CustomEvent = (props: EventProps) => {
               {formatTime(props.event.start)} - {formatTime(props.event.end)}
             </p>
           </div>
-          
+
           <div className="p-4">
-            {props.title && (
-              <p className="text-gray-700">{props.title}</p>
-            )}
+            {props.title && <p className="text-gray-700">{props.title}</p>}
           </div>
 
           <button
