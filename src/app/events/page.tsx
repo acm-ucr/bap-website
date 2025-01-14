@@ -18,8 +18,11 @@ const Events = () => {
   const getUpcomingEvents = (events: Event[]) => {
     const today = new Date();
     return events
-      .filter((event) => new Date(event.start) >= today)
-      .sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime())
+      .filter((event) => event.start && new Date(event.start) >= today)
+      .sort((a, b) => {
+        if (!a.start || !b.start) return 0;
+        return new Date(a.start).getTime() - new Date(b.start).getTime();
+      })
       .slice(0, 3);
   };
 
