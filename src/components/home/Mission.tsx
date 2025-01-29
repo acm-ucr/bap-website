@@ -27,7 +27,7 @@ const Mission = () => {
 
       <div className="sm:text-md bottom-[10%] left-1/2 max-h-fit min-h-fit transform flex-col items-center justify-center space-y-4 bg-[#b4966f] p-4 text-center text-xs text-white shadow-5xl md:h-[25%] lg:absolute lg:my-0 lg:-translate-x-1/2 lg:bg-[#b4966fa4] lg:text-sm lg:font-normal lg:shadow-none xl:text-base">
         <div>
-          Joining BAP has truly shaped my college experience! Through BAP, I’ve
+          "Joining BAP has truly shaped my college experience! Through BAP, I’ve
           built a strong community and met my closest friends at UCR. Serving as
           President has also helped me grow both personally and professionally,
           making my time here incredibly fulfilling.” - Alison Wu, President
