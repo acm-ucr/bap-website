@@ -4,8 +4,8 @@ import RSM from "/public/brands/rsm.webp";
 import HCVT from "/public/brands/hcvt.webp";
 import PWC from "/public/brands/pwc.webp";
 import Deloitte from "/public/brands/deloitte.webp";
-import EY from "/public/brands/ey.png";
-import BDO from "/public/brands/bdo.png";
+import EY from "/public/brands/ey.webp";
+import BDO from "/public/brands/bdo.webp";
 
 const Professional = () => {
   return (
