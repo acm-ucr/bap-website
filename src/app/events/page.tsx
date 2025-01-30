@@ -38,10 +38,8 @@ const Events = () => {
           new Date().getMonth(),
           1,
         ).toISOString()}&timeMax=${new Date(
-          new Date().getMonth() === 11
-            ? new Date().getFullYear() + 1
-            : new Date().getFullYear(),
-          new Date().getMonth() === 11 ? 0 : new Date().getMonth() + 1,
+          new Date().getFullYear() + 1,
+          new Date().getMonth(),
           1,
         ).toISOString()}`,
       )
