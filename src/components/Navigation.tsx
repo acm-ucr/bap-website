@@ -40,7 +40,6 @@ const Navigation = () => {
       <Navbar.Collapse className="justify-end">
         <Nav className="items-center justify-between pr-2 text-xl md:pr-8 lg:space-x-6 xl:text-2xl">
           {navData.map(({ name, link }, index) => (
-            //item.link ? (
             <Nav.Link
               as={Link}
               key={index}
