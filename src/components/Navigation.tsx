@@ -6,17 +6,10 @@ import Image from "next/image";
 import logo from "@/public/bap.webp";
 import { navData } from "@/data/navData";
 import { Menu } from "lucide-react";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
-  const [activePath, setActivePath] = useState("");
-  const handleNavClick = (Path: string) => {
-    setActivePath(Path);
-  };
-
-  const handleBAPClick = () => {
-    setActivePath("");
-  };
+  const pathName = usePathname();
 
   return (
     <Navbar
@@ -25,11 +18,7 @@ const Navigation = () => {
       className="w-full items-center justify-between pt-4"
     >
       <Navbar.Brand className="pl-4 sm:pl-8">
-        <Link
-          className="flex items-center space-x-2 no-underline md:space-x-4"
-          href="/"
-          onClick={handleBAPClick}
-        >
+        <Link className="flex items-center p-0" href="/">
           <Image
             className="w-10 sm:w-14 lg:w-16 xl:w-20"
             src={logo}
@@ -50,41 +39,23 @@ const Navigation = () => {
 
       <Navbar.Collapse className="justify-end">
         <Nav className="items-center justify-between pr-2 text-xl md:pr-8 lg:space-x-6 xl:text-2xl">
-          {navData.map((item, index) =>
-            item.link ? (
-              <Nav.Link
-                as={Link}
-                key={index}
-                href={item.link}
-                className={`text-white transition duration-300 hover:text-gray-700`}
-                onClick={() => handleNavClick(item.link!)}
+          {navData.map(({ name, link }, index) => (
+            //item.link ? (
+            <Nav.Link
+              as={Link}
+              key={index}
+              className={`text-white transition duration-300 hover:text-gray-700`}
+              href={link}
+            >
+              <div
+                className={`font-light ${
+                  pathName === link ? "underline underline-offset-8" : ""
+                }`}
               >
-                <div
-                  className={`font-light ${
-                    activePath === item.link
-                      ? "underline underline-offset-8"
-                      : ""
-                  }`}
-                >
-                  {item.name}
-                </div>
-              </Nav.Link>
-            ) : (
-              // Resources Link
-              <Nav.Link
-                as={Link}
-                href="/resources"
-                className={`text-white transition duration-300 hover:text-gray-700`}
-                onClick={() => handleNavClick("/resources")}
-              >
-                <div
-                  className={`font-light ${activePath === "/resources" ? "underline underline-offset-8" : ""}`}
-                >
-                  Resources
-                </div>
-              </Nav.Link>
-            ),
-          )}
+                {name}
+              </div>
+            </Nav.Link>
+          ))}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
