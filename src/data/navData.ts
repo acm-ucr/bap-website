@@ -26,6 +26,7 @@ export const navData: data[] = [
   },
   {
     name: "Resources",
+    link: "/resources",
     sub: [
       { name: "Resume", link: "/resources/resume" },
       { name: "Cover Letter", link: "/resources/cover" },
