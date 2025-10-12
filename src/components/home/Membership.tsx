@@ -11,10 +11,7 @@ const Membership = () => {
       </p>
       <button>
         <p className="relative -bottom-6 rounded-sm bg-bap-brown-100 bg-opacity-[34%] px-12 py-3 text-center text-3xl shadow-md shadow-black hover:bg-red-800 active:bg-red-600">
-          <Link
-            href="https://docs.google.com/forms/d/17n47x1sm1ptZy3QNdakgPzENCSWlf_-wbFnubNJq9pY/edit"
-            target="_blank"
-          >
+          <Link href="https://forms.gle/DKi1W7nD3SzV4syB6" target="_blank">
             Join Us
           </Link>
         </p>
