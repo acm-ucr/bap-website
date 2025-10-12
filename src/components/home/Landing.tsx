@@ -22,10 +22,7 @@ const Landing = () => {
             Excellence, Ethics, and Engagement
           </p>
         </div>
-        <Link
-          href="https://docs.google.com/forms/d/17n47x1sm1ptZy3QNdakgPzENCSWlf_-wbFnubNJq9pY/edit"
-          target="_blank"
-        >
+        <Link href="https://forms.gle/DKi1W7nD3SzV4syB6" target="_blank">
           <div className="absolute -bottom-5 -right-4 cursor-pointer self-center rounded bg-bap-red-200 px-4 py-2 font-semibold text-white hover:bg-red-800 md:-right-10">
             Join Us
           </div>
