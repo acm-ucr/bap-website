@@ -21,7 +21,7 @@ const Footer = () => {
           <Link
             href="mailto:betaalphapsi@gmail.com"
             target="_blank"
-            className="mb-0 text-xs hover:text-gray-200 sm:text-base md:text-lg"
+            className="mb-0 text-xs text-inherit no-underline hover:text-gray-200 sm:text-base md:text-lg"
           >
             <p>betaalphapsi@gmail.com</p>
           </Link>
@@ -29,21 +29,21 @@ const Footer = () => {
             <Link
               href="https://www.instagram.com/ucrbap/?hl=en"
               target="_blank"
-              className="hover:text-gray-200"
+              className="text-inherit no-underline hover:text-gray-200"
             >
               <FaInstagram />
             </Link>
             <Link
               href="https://discord.gg/3P7y6sTgFB"
               target="_blank"
-              className="hover:text-gray-200"
+              className="text-inherit no-underline hover:text-gray-200"
             >
               <RxDiscordLogo />
             </Link>
             <Link
               href="https://www.linkedin.com/company/ucr-beta-alpha-psi/"
               target="_blank"
-              className="hover:text-gray-200"
+              className="text-inherit no-underline hover:text-gray-200"
             >
               <FaLinkedin />
             </Link>

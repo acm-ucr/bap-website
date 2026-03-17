@@ -25,7 +25,7 @@ const Mission = () => {
         <div className="absolute inset-0 bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent from-60% to-bap-brown-400 to-100%"></div>
       </div>
 
-      <div className="sm:text-md bottom-[10%] left-1/2 max-h-fit min-h-fit transform flex-col items-center justify-center space-y-4 bg-[#b4966f] p-4 text-center text-xs text-white shadow-5xl md:h-[25%] lg:absolute lg:my-0 lg:-translate-x-1/2 lg:bg-[#b4966fa4] lg:text-sm lg:font-normal lg:shadow-none xl:text-base">
+      <div className="sm:text-md bottom-[10%] left-1/2 max-h-fit min-h-fit transform flex-col items-center justify-center space-y-4 bg-[#b4966f] p-4 text-center text-xs text-white shadow-5xl lg:absolute lg:my-0 lg:-translate-x-1/2 lg:bg-[#b4966fa4] lg:text-sm lg:font-normal lg:shadow-none xl:text-base">
         <div>
           "Joining BAP has truly shaped my college experience! Through BAP, I’ve
           built a strong community and met my closest friends at UCR. Serving as

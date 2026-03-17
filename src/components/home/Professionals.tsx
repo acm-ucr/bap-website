@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Bakertilly from "/public/brands/bakertilly.webp";
-import RSM from "/public/brands/rsm.webp";
-import HCVT from "/public/brands/hcvt.webp";
-import PWC from "/public/brands/pwc.webp";
-import Deloitte from "/public/brands/deloitte.webp";
-import EY from "/public/brands/ey.webp";
-import BDO from "/public/brands/bdo.webp";
+import Bakertilly from "@/public/brands/bakertilly.webp";
+import RSM from "@/public/brands/rsm.webp";
+import HCVT from "@/public/brands/hcvt.webp";
+import PWC from "@/public/brands/pwc.webp";
+import Deloitte from "@/public/brands/deloitte.webp";
+import EY from "@/public/brands/ey.webp";
+import BDO from "@/public/brands/bdo.webp";
 
 const Professional = () => {
   return (
