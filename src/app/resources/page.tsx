@@ -7,7 +7,10 @@ const Page = () => {
         Resume 101
       </p>
 
-      <Link href="https://careers.ucr.edu/sites/default/files/2023-09/business_admin_accounting_concentration_23-24.pdf">
+      <Link
+        className="no-underline"
+        href="https://careers.ucr.edu/sites/default/files/2023-09/business_admin_accounting_concentration_23-24.pdf"
+      >
         <p className="pt-3 text-left font-sans text-xl font-thin text-white underline hover:underline-offset-1">
           Resume Template
         </p>
@@ -46,7 +49,10 @@ const Page = () => {
         Cover Letter
       </p>
 
-      <Link href="https://studentdocs.ucr.edu/career-center/uc-riverside_career-center_cover-letter-handout.pdf">
+      <Link
+        className="no-underline"
+        href="https://studentdocs.ucr.edu/career-center/uc-riverside_career-center_cover-letter-handout.pdf"
+      >
         <p className="pt-3 text-left font-sans text-xl font-thin text-white underline hover:underline-offset-1">
           Cover Letter Template
         </p>

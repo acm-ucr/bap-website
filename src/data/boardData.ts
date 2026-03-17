@@ -1,15 +1,20 @@
-import daniel from "@/public/board/danielAlmendarez.webp";
-import tanya from "@/public/board/tanyaTang.webp";
-import anna from "@/public/board/annaWu.webp";
-import jack from "@/public/board/jackWebber.webp";
-import lucas from "@/public/board/lucasMoo.webp";
-import merari from "@/public/board/merariZamora.webp";
-import cody from "@/public/board/codyNguyen.webp";
-import amanda from "@/public/board/amandaHsieh.webp";
-import phuong from "@/public/board/phuongHo.webp";
-import isabella from "@/public/board/isabellaWu.webp";
-import allen from "@/public/board/allenLien.webp";
-import andrew from "@/public/board/andrewMartinez.webp";
+import daniel from "@/public/board/Daniel_Almendarez.webp";
+import jack from "@/public/board/Jack_Webber.webp";
+import merari from "@/public/board/Merari_Zamora.webp";
+import anna from "@/public/board/Anna_Wu.webp";
+import lucas from "@/public/board/Lucas_Moo.webp";
+import alex from "@/public/board/Alex_Situ.webp";
+import roy from "@/public/board/Roy_Waldrop.webp";
+import joshua from "@/public/board/Joshua_Nguyen.webp";
+import ian from "@/public/board/Ian_Slobodien.webp";
+import anthony from "@/public/board/Anthony_Chiu.webp";
+import coco from "@/public/board/Coco_Yang.webp";
+import julian from "@/public/board/Julian_Chang.webp";
+import jayden from "@/public/board/Jayden_Lee.webp";
+import ivan from "@/public/board/Ivan_Liu.webp";
+import angad from "@/public/board/Angad_Deodhar.webp";
+import john from "@/public/board/John_Zhou.webp";
+import edward from "@/public/board/Edward_Kim.webp";
 import { StaticImageData } from "next/image";
 
 export type BOARDTYPE = {
@@ -26,8 +31,13 @@ export const BOARDDATA: BOARDTYPE[] = [
   },
   {
     boardPosition: "Senior Advisor",
-    name: "Tanya Tang",
-    img: tanya,
+    name: "Jack Webber",
+    img: jack,
+  },
+  {
+    boardPosition: "Senior Advisor",
+    name: "Merari Zamora",
+    img: merari,
   },
   {
     boardPosition: "President",
@@ -36,48 +46,68 @@ export const BOARDDATA: BOARDTYPE[] = [
   },
   {
     boardPosition: "Executive Vice President",
-    name: "Jack Webber",
-    img: jack,
-  },
-  {
-    boardPosition: "VP of Membership",
     name: "Lucas Moo",
     img: lucas,
   },
   {
+    boardPosition: "Co-VP of Membership",
+    name: "Alex Situ",
+    img: alex,
+  },
+  {
+    boardPosition: "Co-VP of Membership",
+    name: "Roy Waldrop",
+    img: roy,
+  },
+  {
     boardPosition: "VP of Correspondence",
-    name: "Merari Zamora",
-    img: merari,
+    name: "Joshua Nguyen",
+    img: joshua,
   },
   {
     boardPosition: "VP of Finance",
-    name: "Cody Nguyen",
-    img: cody,
+    name: "Ian Slobodien",
+    img: ian,
   },
   {
-    boardPosition: "VP of Marketing",
-    name: "Amanda Hsieh",
-    img: amanda,
+    boardPosition: "Co-VP of Marketing",
+    name: "Anthony Chiu",
+    img: anthony,
+  },
+  {
+    boardPosition: "Co-VP of Marketing",
+    name: "Coco Yang",
+    img: coco,
   },
   {
     boardPosition: "VP of External Affairs",
-    name: "Phuong Ho",
-    img: phuong,
+    name: "Julian Chang",
+    img: julian,
   },
   {
-    boardPosition: "VP of Internal Affairs",
-    name: "Isabella Wu",
-    img: isabella,
+    boardPosition: "Co-VP of Internal Affairs",
+    name: "Jayden Lee",
+    img: jayden,
   },
   {
-    boardPosition: "VP of Professional Development",
-    name: "Allen Lien",
-    img: allen,
+    boardPosition: "Co-VP of Internal Affairs",
+    name: "Ivan Liu",
+    img: ivan,
+  },
+  {
+    boardPosition: "Co-VP of Professional Development",
+    name: "Angad Deodhar",
+    img: angad,
+  },
+  {
+    boardPosition: "Co-VP of Professional Development",
+    name: "John Zhou",
+    img: john,
   },
   {
     boardPosition: "VP of Alumni Relations",
-    name: "Andrew Martinez",
-    img: andrew,
+    name: "Edward Kim",
+    img: edward,
   },
 ];
 

@@ -11,6 +11,60 @@ export type PREVBOARDTYPE = {
 
 export const PREVBOARDDATA: PREVBOARDTYPE[] = [
   {
+    year: "2024-2025",
+    open: false,
+    members: [
+      {
+        name: "Prof Daniel Almendarez",
+        boardPosition: "Faculty Advisor",
+      },
+      {
+        boardPosition: "Senior Advisor",
+        name: "Tanya Tang",
+      },
+      {
+        boardPosition: "President",
+        name: "Anna Wu",
+      },
+      {
+        boardPosition: "Executive Vice President",
+        name: "Jack Webber",
+      },
+      {
+        boardPosition: "VP of Membership",
+        name: "Lucas Moo",
+      },
+      {
+        boardPosition: "VP of Correspondence",
+        name: "Merari Zamora",
+      },
+      {
+        boardPosition: "VP of Finance",
+        name: "Cody Nguyen",
+      },
+      {
+        boardPosition: "VP of Marketing",
+        name: "Amanda Hsieh",
+      },
+      {
+        boardPosition: "VP of External Affairs",
+        name: "Phuong Ho",
+      },
+      {
+        boardPosition: "VP of Internal Affairs",
+        name: "Isabella Wu",
+      },
+      {
+        boardPosition: "VP of Professional Development",
+        name: "Allen Lien",
+      },
+      {
+        boardPosition: "VP of Alumni Relations",
+        name: "Andrew Martinez",
+      },
+    ],
+  },
+  {
     year: "2023-2024",
     open: false,
     members: [
