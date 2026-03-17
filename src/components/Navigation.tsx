@@ -18,7 +18,7 @@ const Navigation = () => {
       className="w-full items-center justify-between pt-4"
     >
       <Navbar.Brand className="pl-4 sm:pl-8">
-        <Link className="flex items-center p-0" href="/">
+        <Link className="flex items-center p-0 no-underline" href="/">
           <Image
             className="w-10 sm:w-14 lg:w-16 xl:w-20"
             src={logo}
