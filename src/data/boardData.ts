@@ -1,20 +1,20 @@
-import daniel from "@/public/board/Daniel_Almendarez.jpeg";
-import jack from "@/public/board/Jack_Webber.jpeg";
+import daniel from "@/public/board/Daniel_Almendarez.webp";
+import jack from "@/public/board/Jack_Webber.webp";
 import merari from "@/public/board/Merari_Zamora.webp";
-import anna from "@/public/board/Anna_Wu.jpeg";
-import lucas from "@/public/board/Lucas_Moo.png";
+import anna from "@/public/board/Anna_Wu.webp";
+import lucas from "@/public/board/Lucas_Moo.webp";
 import alex from "@/public/board/Alex_Situ.webp";
-import roy from "@/public/board/Roy_Waldrop.jpeg";
-import joshua from "@/public/board/Joshua_Nguyen.jpeg";
-import ian from "@/public/board/Ian_Slobodien.jpeg";
-import anthony from "@/public/board/Anthony_Chiu.jpeg";
+import roy from "@/public/board/Roy_Waldrop.webp";
+import joshua from "@/public/board/Joshua_Nguyen.webp";
+import ian from "@/public/board/Ian_Slobodien.webp";
+import anthony from "@/public/board/Anthony_Chiu.webp";
 import coco from "@/public/board/Coco_Yang.webp";
-import julian from "@/public/board/Julian_Chang.jpeg";
-import jayden from "@/public/board/Jayden_Lee.jpeg";
+import julian from "@/public/board/Julian_Chang.webp";
+import jayden from "@/public/board/Jayden_Lee.webp";
 import ivan from "@/public/board/Ivan_Liu.webp";
-import angad from "@/public/board/Angad_Deodhar.jpeg";
-import john from "@/public/board/John_Zhou.jpeg";
-import edward from "@/public/board/Edward_Kim.jpeg";
+import angad from "@/public/board/Angad_Deodhar.webp";
+import john from "@/public/board/John_Zhou.webp";
+import edward from "@/public/board/Edward_Kim.webp";
 import { StaticImageData } from "next/image";
 
 export type BOARDTYPE = {
